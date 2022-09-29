@@ -1,0 +1,143 @@
+html, body {
+    background-color: #fff;
+    color: #000;
+    height:100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+#HEADER {
+/*    display: block;
+    position: static;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    overflow: hidden;
+    /*overflow: scroll;*/
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    overflow: hidden;
+    background-color: #444;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li.elem, a.elem {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: black; color: #8acbfc}
+
+ul.topnav li a.active {background-color: #0073c9;}
+
+ul.topnav li.right {float: right;}
+
+
+#CONTENT-BOX {
+    float: left;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    /*height: 100%;*/
+    height: calc(100% - 40px);
+    top: 40px;
+    display: block;
+    overflow: scroll;
+    overflow-x: auto;
+}
+/*
+
+#CONTENT {
+    background-color: #fff;
+    position: relative;
+    
+    padding: 1rem;
+    overflow:auto;
+    margin: auto;
+    vertical-align: middle;
+}*/
+
+/*.centered {
+    min-height: 250px;
+    max-width: 600px;
+}*/
+
+table, th, td, th {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.err {
+    color: red;
+    padding: 0.5rem;
+}
+
+records {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+records td, records th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+records tr:nth-child(even){background-color: #f2f2f2;}
+
+records tr:hover {background-color: #ddd;}
+
+records th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+
+span {
+    margin:0 30px;
+}
+
+span:first-of-type{
+    margin-left:0;
+}
+
+span:last-of-type{
+    margin-right:0;
+}
+
+span1 {
+    margin:0 5px;
+    padding: 5px;
+}
+
+span1:first-of-type{
+    margin-left:0;
+}
+
+span1:last-of-type{
+    margin-right:0;
+}

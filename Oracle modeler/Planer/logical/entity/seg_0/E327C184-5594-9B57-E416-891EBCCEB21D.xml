@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E327C184-5594-9B57-E416-891EBCCEB21D" name="Entity access">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 14:44:01 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="CE52EBD2-66E8-E1BE-1B44-D440FB640484">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 14:56:17 UTC</createdTime>
+<generatorID>F7B7F12D-25DB-E2FF-EC97-86BD1156728A</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<referedAttribute>ED96BED7-7884-8BD2-E969-2AD7FC92D0CF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Name" id="A8A03FB3-BFC2-211B-3467-6B526DBEE3F0">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 15:00:14 UTC</createdTime>
+<generatorID>22AAD686-D9C1-58EC-08B1-4058D3535602</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<referedAttribute>774C1F45-F9F9-7A74-3293-CF4086D061FD</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

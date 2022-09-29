@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Group in group" directorySegmentName="seg_0" id="93013A1B-2FD3-65D2-FC5A-5BA5091E7634">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:18:02 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>contains</nameOnSource>
+<nameOnTarget>included by</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>D3248B49-4DF2-984E-DF62-3661C44716BE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D3248B49-4DF2-984E-DF62-3661C44716BE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

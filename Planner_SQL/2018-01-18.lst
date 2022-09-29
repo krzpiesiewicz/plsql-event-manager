@@ -1,0 +1,63 @@
+
+SQL> @tmp_code
+
+        ID BEGIN_DATE                                                                  END_DATE                                                                             
+---------- --------------------------------------------------------------------------- ---------------------------------------------------------------------------          
+        ID NAME                                                                                                 TYPE     DEFAULT_                                           
+---------- ---------------------------------------------------------------------------------------------------- -------- --------                                           
+        24 10-FEB-18 08.32.29.000000 PM                                                11-FEB-18 10.32.41.000000 AM                                                         
+        24 Impreza po sesji                                                                                     event    read                                               
+                                                                                                                                                                            
+
+SQL> @tmp_code
+SELECT id, name, begin_date, end_date, default_access FROM event, object WHERE event.id = object.id
+       *
+ERROR at line 1:
+ORA-00918: column ambiguously defined 
+
+
+SQL> @tmp_code
+
+        ID BEGIN_DATE                                                                  END_DATE                                                                             
+---------- --------------------------------------------------------------------------- ---------------------------------------------------------------------------          
+        24 10-FEB-18 08.32.29.000000 PM                                                11-FEB-18 10.32.41.000000 AM                                                         
+
+SQL> @tmp_code
+SELECT id, name, begin_date, end_date, default_access FROM event, object WHERE event.id = object.id GROUP BY id
+*
+ERROR at line 2:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> @tmp_code
+SELECT id, name, begin_date, end_date, default_access FROM event, object WHERE event.id = object.id GROUP BY id
+                                                                                                             *
+ERROR at line 1:
+ORA-00918: column ambiguously defined 
+
+
+SQL> @tmp_code
+SELECT id, name, begin_date, end_date, default_access FROM event JOIN object ON event.id = object.id
+       *
+ERROR at line 1:
+ORA-00918: column ambiguously defined 
+
+
+SQL> @tmp_code
+SELECT id, name, begin_date, end_date, default_access FROM event INNER JOIN object ON event.id = object.id
+       *
+ERROR at line 1:
+ORA-00918: column ambiguously defined 
+
+
+SQL> @tmp_code
+
+        ID NAME                                                                                                                                                             
+---------- ----------------------------------------------------------------------------------------------------                                                             
+BEGIN_DATE                                                                  END_DATE                                                                    DEFAULT_            
+--------------------------------------------------------------------------- --------------------------------------------------------------------------- --------            
+        24 Impreza po sesji                                                                                                                                                 
+10-FEB-18 08.32.29.000000 PM                                                11-FEB-18 10.32.41.000000 AM                                                read                
+                                                                                                                                                                            
+
+SQL> exit

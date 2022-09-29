@@ -1,0 +1,1755 @@
+
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Function created with compilation errors.
+
+SQL> show err
+Errors for FUNCTION TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+3/1      PLS-00103: Encountered the symbol "IS" when expecting one of the                                                                                                   
+         following:                                                                                                                                                         
+         return                                                                                                                                                             
+                                                                                                                                                                            
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Function created with compilation errors.
+
+SQL> show err
+Errors for FUNCTION TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+3/1      PLS-00103: Encountered the symbol "IS" when expecting one of the                                                                                                   
+         following:                                                                                                                                                         
+         return                                                                                                                                                             
+                                                                                                                                                                            
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+CREATE OR REPLACE PROCEDURE try_log(p_email        user_account.email%type,
+*
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> drop function try_log
+  2  ;
+
+Function dropped.
+
+SQL> drop function try_log
+  2  ;
+drop function try_log
+*
+ERROR at line 1:
+ORA-04043: object TRY_LOG does not exist 
+
+
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Procedure created with compilation errors.
+
+SQL> show err
+Errors for PROCEDURE TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+0/0      PL/SQL: Compilation unit analysis terminated                                                                                                                       
+1/47     PLS-00302: component 'EMAIL' must be declared                                                                                                                      
+SQL> @drop_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+SQL> @create_tables_and_indexes
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Index created.
+
+
+Index created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Commit complete.
+
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Procedure created with compilation errors.
+
+SQL> show err
+Errors for PROCEDURE TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+6/5      PL/SQL: SQL Statement ignored                                                                                                                                      
+6/12     PL/SQL: ORA-00904: "PASS_HASS": invalid identifier                                                                                                                 
+7/5      PL/SQL: Statement ignored                                                                                                                                          
+7/8      PLS-00201: identifier 'PHASH' must be declared                                                                                                                     
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Procedure created with compilation errors.
+
+SQL> show err
+Errors for PROCEDURE TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+6/5      PL/SQL: SQL Statement ignored                                                                                                                                      
+6/12     PL/SQL: ORA-00904: "PASS_HASS": invalid identifier                                                                                                                 
+7/5      PL/SQL: Statement ignored                                                                                                                                          
+7/8      PLS-00201: identifier 'PHASH' must be declared                                                                                                                     
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Procedure created with compilation errors.
+
+SQL> show err
+Errors for PROCEDURE TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+7/5      PL/SQL: Statement ignored                                                                                                                                          
+7/8      PLS-00201: identifier 'PHASH' must be declared                                                                                                                     
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Procedure created with compilation errors.
+
+SQL> show err
+Errors for PROCEDURE TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+7/5      PL/SQL: Statement ignored                                                                                                                                          
+7/8      PLS-00201: identifier 'PHASH' must be declared                                                                                                                     
+SQL> show err
+Errors for PROCEDURE TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+7/5      PL/SQL: Statement ignored                                                                                                                                          
+7/8      PLS-00201: identifier 'PHASH' must be declared                                                                                                                     
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Procedure created with compilation errors.
+
+SQL> show err
+Errors for PROCEDURE TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+6/5      PL/SQL: SQL Statement ignored                                                                                                                                      
+6/27     PLS-00201: identifier 'PHASH' must be declared                                                                                                                     
+6/33     PL/SQL: ORA-00904: : invalid identifier                                                                                                                            
+7/5      PL/SQL: Statement ignored                                                                                                                                          
+7/8      PLS-00201: identifier 'PHASH' must be declared                                                                                                                     
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+SQL> show err
+No errors.
+SQL> @drop procedure try_log
+SP2-0310: unable to open file "drop.sql"
+SQL> drop procedure try_log
+  2  ;
+
+Procedure dropped.
+
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Function created with compilation errors.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+SQL> show err
+No errors.
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Function created with compilation errors.
+
+SQL> show err
+Errors for FUNCTION TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+3/1      PLS-00103: Encountered the symbol "IS" when expecting one of the                                                                                                   
+         following:                                                                                                                                                         
+         return                                                                                                                                                             
+                                                                                                                                                                            
+7/33     PLS-00103: Encountered the symbol "(" when expecting one of the                                                                                                    
+         following:                                                                                                                                                         
+         mod <an identifier> <a double-quoted delimited-identifier>                                                                                                         
+         <a bind variable> continue current sql execute forall merge                                                                                                        
+         pipe purge                                                                                                                                                         
+                                                                                                                                                                            
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Function created with compilation errors.
+
+SQL> show err
+Errors for FUNCTION TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+3/1      PLS-00103: Encountered the symbol "IS" when expecting one of the                                                                                                   
+         following:                                                                                                                                                         
+         return                                                                                                                                                             
+                                                                                                                                                                            
+7/33     PLS-00103: Encountered the symbol "(" when expecting one of the                                                                                                    
+         following:                                                                                                                                                         
+         mod <an identifier> <a double-quoted delimited-identifier>                                                                                                         
+         <a bind variable> continue current sql execute forall merge                                                                                                        
+         pipe purge                                                                                                                                                         
+                                                                                                                                                                            
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Function created with compilation errors.
+
+SQL> show err
+Errors for FUNCTION TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+7/5      PL/SQL: SQL Statement ignored                                                                                                                                      
+7/15     PL/SQL: ORA-00907: missing right parenthesis                                                                                                                       
+14/1     PLS-00103: Encountered the symbol "END" when expecting one of the                                                                                                  
+         following:                                                                                                                                                         
+         ( - + ; case mod new not null <an identifier>                                                                                                                      
+         <a double-quoted delimited-identifier> <a bind variable>                                                                                                           
+         continue avg count current exists max min prior sql stddev                                                                                                         
+         sum variance execute forall merge time timestamp interval                                                                                                          
+         date <a string literal with character set specification>                                                                                                           
+         <a number> <a single-quoted SQL string> pipe                                                                                                                       
+         <an alternatively-quoted string literal with character set                                                                                                         
+         specification>                                                                                                                                                     
+         <an alternati                                                                                                                                                      
+                                                                                                                                                                            
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Function created with compilation errors.
+
+SQL> show err
+Errors for FUNCTION TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+14/1     PLS-00103: Encountered the symbol "END" when expecting one of the                                                                                                  
+         following:                                                                                                                                                         
+         ( - + ; case mod new not null <an identifier>                                                                                                                      
+         <a double-quoted delimited-identifier> <a bind variable>                                                                                                           
+         continue avg count current exists max min prior sql stddev                                                                                                         
+         sum variance execute forall merge time timestamp interval                                                                                                          
+         date <a string literal with character set specification>                                                                                                           
+         <a number> <a single-quoted SQL string> pipe                                                                                                                       
+         <an alternatively-quoted string literal with character set                                                                                                         
+         specification>                                                                                                                                                     
+         <an alternati                                                                                                                                                      
+                                                                                                                                                                            
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Function created with compilation errors.
+
+SQL> show err
+Errors for FUNCTION TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+14/1     PLS-00103: Encountered the symbol "END" when expecting one of the                                                                                                  
+         following:                                                                                                                                                         
+         ( - + ; case mod new not null <an identifier>                                                                                                                      
+         <a double-quoted delimited-identifier> <a bind variable>                                                                                                           
+         continue avg count current exists max min prior sql stddev                                                                                                         
+         sum variance execute forall merge time timestamp interval                                                                                                          
+         date <a string literal with character set specification>                                                                                                           
+         <a number> <a single-quoted SQL string> pipe                                                                                                                       
+         <an alternatively-quoted string literal with character set                                                                                                         
+         specification>                                                                                                                                                     
+         <an alternati                                                                                                                                                      
+                                                                                                                                                                            
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Function created.
+
+SQL> show err
+No errors.
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Function created with compilation errors.
+
+SQL> show err
+Errors for FUNCTION TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+7/5      PL/SQL: SQL Statement ignored                                                                                                                                      
+7/15     PL/SQL: ORA-00907: missing right parenthesis                                                                                                                       
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Warning: Function created with compilation errors.
+
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Function created.
+
+SQL> show err
+No errors.
+SQL> @example
+
+PL/SQL procedure successfully completed.
+
+
+Commit complete.
+
+
+PL/SQL procedure successfully completed.
+
+SQL> try_log(kp, hej);
+SP2-0734: unknown command beginning "try_log(kp..." - rest of line ignored.
+SQL> try_log("kp", "hej");
+SP2-0734: unknown command beginning "try_log("k..." - rest of line ignored.
+SQL> try_log('kp', 'hej');
+SP2-0734: unknown command beginning "try_log('k..." - rest of line ignored.
+SQL> begin try_log('kp', 'hej'); end;/
+  2  ;
+  3  \
+  4  
+
+SQL> begin try_log('hej', 1);
+  2  end;
+  3  /
+begin try_log('hej', 1);
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7: 
+PLS-00221: 'TRY_LOG' is not a procedure or is undefined 
+ORA-06550: line 1, column 7: 
+PL/SQL: Statement ignored 
+
+
+SQL> begin try_log('hej', 1); end;/
+  2  /
+begin try_log('hej', 1); end;/
+                             *
+ERROR at line 1:
+ORA-06550: line 1, column 30: 
+PLS-00103: Encountered the symbol "/" The symbol "/" was ignored. 
+
+
+SQL> begin try_log('hej', 1); end; /
+  2  /
+begin try_log('hej', 1); end; /
+                              *
+ERROR at line 1:
+ORA-06550: line 1, column 31: 
+PLS-00103: Encountered the symbol "/" The symbol "/" was ignored. 
+
+
+SQL> /
+begin try_log('hej', 1); end; /
+                              *
+ERROR at line 1:
+ORA-06550: line 1, column 31: 
+PLS-00103: Encountered the symbol "/" The symbol "/" was ignored. 
+
+
+SQL> begin try_log('hej', 1); end;
+  2  /
+begin try_log('hej', 1); end;
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7: 
+PLS-00221: 'TRY_LOG' is not a procedure or is undefined 
+ORA-06550: line 1, column 7: 
+PL/SQL: Statement ignored 
+
+
+SQL> select * from user
+  2  ;
+select * from user
+              *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> select * from user_space;
+select * from user_space
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> desc user_store
+ERROR:
+ORA-04043: object user_store does not exist 
+
+
+SQL> desc user_source
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ NAME                                                                                                      VARCHAR2(128)
+ TYPE                                                                                                      VARCHAR2(12)
+ LINE                                                                                                      NUMBER
+ TEXT                                                                                                      VARCHAR2(4000)
+ ORIGIN_CON_ID                                                                                             NUMBER
+
+SQL> select * from user_source;
+
+NAME                                                                                                                             TYPE               LINE                    
+-------------------------------------------------------------------------------------------------------------------------------- ------------ ----------                    
+TEXT                                                                                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ORIGIN_CON_ID                                                                                                                                                               
+-------------                                                                                                                                                               
+USER_ENTITY_CREATION_TRG                                                                                                         TRIGGER               1                    
+TRIGGER user_entity_creation_trg BEFORE                                                                                                                                     
+            0                                                                                                                                                               
+                                                                                                                                                                            
+USER_ENTITY_CREATION_TRG                                                                                                         TRIGGER               2                    
+    INSERT ON user_entity                                                                                                                                                   
+            0                                                                                                                                                               
+                                                                                                                                                                            
+USER_ENTITY_CREATION_TRG                                                                                                         TRIGGER               3                    
+FOR EACH ROW                                                                                                                                                                
+            0                                                                                                                                                               
+                                                                                                                                                                            
+USER_ENTITY_CREATION_TRG                                                                                                         TRIGGER               4                    
+DECLARE                                                                                                                                                                     
+            0                                                                                                                                                               
+                                                                                                                                                                            
+USER_ENTITY_CREATION_TRG                                                                                                         TRIGGER               5                    
+    cnt     INTEGER;                                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+USER_ENTITY_CREATION_TRG                                                                                                         TRIGGER               6                    
+BEGIN                                                                                                                                                                       
+            0                                                                                                                                                               
+                                                                                                                                                                            
+USER_ENTITY_CREATION_TRG                                                                                                         TRIGGER               7                    
+--     SELECT COUNT(*) INTO cnt FROM user_entity_type WHERE :new.type = user_entity_type.name;                                                                              
+            0                                                                                                                                                               
+                                                                                                                                                                            
+USER_ENTITY_CREATION_TRG                                                                                                         TRIGGER               8                    
+--     IF cnt = 0 THEN raise_application_error(-20001, 'Nieistniej??cy typ podmiotu.');                                                                                     
+            0                                                                                                                                                               
+                                                                                                                                                                            
+USER_ENTITY_CREATION_TRG                                                                                                         TRIGGER               9                    
+    :new.id := user_entity_id_seq.nextval;                                                                                                                                  
+            0                                                                                                                                                               
+                                                                                                                                                                            
+
+NAME                                                                                                                             TYPE               LINE                    
+-------------------------------------------------------------------------------------------------------------------------------- ------------ ----------                    
+TEXT                                                                                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ORIGIN_CON_ID                                                                                                                                                               
+-------------                                                                                                                                                               
+USER_ENTITY_CREATION_TRG                                                                                                         TRIGGER              10                    
+--     END IF;                                                                                                                                                              
+            0                                                                                                                                                               
+                                                                                                                                                                            
+USER_ENTITY_CREATION_TRG                                                                                                         TRIGGER              11                    
+END;                                                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+USER_ACCOUNT_DEL_TRG                                                                                                             TRIGGER               1                    
+TRIGGER user_account_del_trg AFTER                                                                                                                                          
+            0                                                                                                                                                               
+                                                                                                                                                                            
+USER_ACCOUNT_DEL_TRG                                                                                                             TRIGGER               2                    
+    DELETE ON user_account                                                                                                                                                  
+            0                                                                                                                                                               
+                                                                                                                                                                            
+USER_ACCOUNT_DEL_TRG                                                                                                             TRIGGER               3                    
+FOR EACH ROW                                                                                                                                                                
+            0                                                                                                                                                               
+                                                                                                                                                                            
+USER_ACCOUNT_DEL_TRG                                                                                                             TRIGGER               4                    
+BEGIN                                                                                                                                                                       
+            0                                                                                                                                                               
+                                                                                                                                                                            
+USER_ACCOUNT_DEL_TRG                                                                                                             TRIGGER               5                    
+    DELETE FROM user_entity WHERE id = :old.id;                                                                                                                             
+            0                                                                                                                                                               
+                                                                                                                                                                            
+USER_ACCOUNT_DEL_TRG                                                                                                             TRIGGER               6                    
+END;                                                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+TRY_LOG                                                                                                                          FUNCTION              1                    
+FUNCTION try_log(p_email        user_account.email%type,                                                                                                                    
+            0                                                                                                                                                               
+                                                                                                                                                                            
+
+NAME                                                                                                                             TYPE               LINE                    
+-------------------------------------------------------------------------------------------------------------------------------- ------------ ----------                    
+TEXT                                                                                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ORIGIN_CON_ID                                                                                                                                                               
+-------------                                                                                                                                                               
+TRY_LOG                                                                                                                          FUNCTION              2                    
+                                   p_pass_hash    user_account.pass_hash%type)                                                                                              
+            0                                                                                                                                                               
+                                                                                                                                                                            
+TRY_LOG                                                                                                                          FUNCTION              3                    
+RETURN user_account.id%type IS                                                                                                                                              
+            0                                                                                                                                                               
+                                                                                                                                                                            
+TRY_LOG                                                                                                                          FUNCTION              4                    
+    id      user_account.id%type;                                                                                                                                           
+            0                                                                                                                                                               
+                                                                                                                                                                            
+TRY_LOG                                                                                                                          FUNCTION              5                    
+    hash    user_account.pass_hash%type;                                                                                                                                    
+            0                                                                                                                                                               
+                                                                                                                                                                            
+TRY_LOG                                                                                                                          FUNCTION              6                    
+BEGIN                                                                                                                                                                       
+            0                                                                                                                                                               
+                                                                                                                                                                            
+TRY_LOG                                                                                                                          FUNCTION              7                    
+    SELECT id, pass_hash INTO id, hash FROM user_account WHERE user_account.email = p_email;                                                                                
+            0                                                                                                                                                               
+                                                                                                                                                                            
+TRY_LOG                                                                                                                          FUNCTION              8                    
+    IF hash IS NULL THEN raise_application_error(-20000, 'Wrong email');                                                                                                    
+            0                                                                                                                                                               
+                                                                                                                                                                            
+TRY_LOG                                                                                                                          FUNCTION              9                    
+    ELSE                                                                                                                                                                    
+            0                                                                                                                                                               
+                                                                                                                                                                            
+TRY_LOG                                                                                                                          FUNCTION             10                    
+        IF hash != p_pass_hash THEN raise_application_error(-20001, 'Wrong password');                                                                                      
+            0                                                                                                                                                               
+                                                                                                                                                                            
+
+NAME                                                                                                                             TYPE               LINE                    
+-------------------------------------------------------------------------------------------------------------------------------- ------------ ----------                    
+TEXT                                                                                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ORIGIN_CON_ID                                                                                                                                                               
+-------------                                                                                                                                                               
+TRY_LOG                                                                                                                          FUNCTION             11                    
+        END IF;                                                                                                                                                             
+            0                                                                                                                                                               
+                                                                                                                                                                            
+TRY_LOG                                                                                                                          FUNCTION             12                    
+    END IF;                                                                                                                                                                 
+            0                                                                                                                                                               
+                                                                                                                                                                            
+TRY_LOG                                                                                                                          FUNCTION             13                    
+    RETURN id;                                                                                                                                                              
+            0                                                                                                                                                               
+                                                                                                                                                                            
+TRY_LOG                                                                                                                          FUNCTION             14                    
+END;                                                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+OBJECT_CREATION_TRG                                                                                                              TRIGGER               1                    
+TRIGGER object_creation_trg BEFORE                                                                                                                                          
+            0                                                                                                                                                               
+                                                                                                                                                                            
+OBJECT_CREATION_TRG                                                                                                              TRIGGER               2                    
+    INSERT ON object                                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+OBJECT_CREATION_TRG                                                                                                              TRIGGER               3                    
+FOR EACH ROW                                                                                                                                                                
+            0                                                                                                                                                               
+                                                                                                                                                                            
+OBJECT_CREATION_TRG                                                                                                              TRIGGER               4                    
+DECLARE                                                                                                                                                                     
+            0                                                                                                                                                               
+                                                                                                                                                                            
+OBJECT_CREATION_TRG                                                                                                              TRIGGER               5                    
+    cnt     INTEGER;                                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+
+NAME                                                                                                                             TYPE               LINE                    
+-------------------------------------------------------------------------------------------------------------------------------- ------------ ----------                    
+TEXT                                                                                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ORIGIN_CON_ID                                                                                                                                                               
+-------------                                                                                                                                                               
+OBJECT_CREATION_TRG                                                                                                              TRIGGER               6                    
+BEGIN                                                                                                                                                                       
+            0                                                                                                                                                               
+                                                                                                                                                                            
+OBJECT_CREATION_TRG                                                                                                              TRIGGER               7                    
+--     SELECT COUNT(*) INTO cnt FROM object_type WHERE :new.type = object_type.name;                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+OBJECT_CREATION_TRG                                                                                                              TRIGGER               8                    
+--     IF cnt = 0 THEN raise_application_error(-20000, 'Nieistniej??cy typ obiektu.');                                                                                      
+            0                                                                                                                                                               
+                                                                                                                                                                            
+OBJECT_CREATION_TRG                                                                                                              TRIGGER               9                    
+--     END IF;                                                                                                                                                              
+            0                                                                                                                                                               
+                                                                                                                                                                            
+OBJECT_CREATION_TRG                                                                                                              TRIGGER              10                    
+    :new.id := object_id_seq.nextval;                                                                                                                                       
+            0                                                                                                                                                               
+                                                                                                                                                                            
+OBJECT_CREATION_TRG                                                                                                              TRIGGER              11                    
+END;                                                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+GROUP_OF_USERS_DEL_TRG                                                                                                           TRIGGER               1                    
+TRIGGER group_of_users_del_trg BEFORE                                                                                                                                       
+            0                                                                                                                                                               
+                                                                                                                                                                            
+GROUP_OF_USERS_DEL_TRG                                                                                                           TRIGGER               2                    
+    DELETE ON group_of_users                                                                                                                                                
+            0                                                                                                                                                               
+                                                                                                                                                                            
+GROUP_OF_USERS_DEL_TRG                                                                                                           TRIGGER               3                    
+FOR EACH ROW                                                                                                                                                                
+            0                                                                                                                                                               
+                                                                                                                                                                            
+
+NAME                                                                                                                             TYPE               LINE                    
+-------------------------------------------------------------------------------------------------------------------------------- ------------ ----------                    
+TEXT                                                                                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ORIGIN_CON_ID                                                                                                                                                               
+-------------                                                                                                                                                               
+GROUP_OF_USERS_DEL_TRG                                                                                                           TRIGGER               4                    
+BEGIN                                                                                                                                                                       
+            0                                                                                                                                                               
+                                                                                                                                                                            
+GROUP_OF_USERS_DEL_TRG                                                                                                           TRIGGER               5                    
+    DELETE FROM /* tu trzeba poczarowa?? z indeksami */ entity_containing WHERE container_id = :old.entity_id OR included_id = :old.entity_id;                              
+            0                                                                                                                                                               
+                                                                                                                                                                            
+GROUP_OF_USERS_DEL_TRG                                                                                                           TRIGGER               6                    
+    del_object(:old.object_id);                                                                                                                                             
+            0                                                                                                                                                               
+                                                                                                                                                                            
+GROUP_OF_USERS_DEL_TRG                                                                                                           TRIGGER               7                    
+END;                                                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+DEL_USER                                                                                                                         PROCEDURE             1                    
+PROCEDURE del_user(id_to_del     user_account.id%type)                                                                                                                      
+            0                                                                                                                                                               
+                                                                                                                                                                            
+DEL_USER                                                                                                                         PROCEDURE             2                    
+IS                                                                                                                                                                          
+            0                                                                                                                                                               
+                                                                                                                                                                            
+DEL_USER                                                                                                                         PROCEDURE             3                    
+BEGIN                                                                                                                                                                       
+            0                                                                                                                                                               
+                                                                                                                                                                            
+DEL_USER                                                                                                                         PROCEDURE             4                    
+    DELETE FROM user_account WHERE id = id_to_del;                                                                                                                          
+            0                                                                                                                                                               
+                                                                                                                                                                            
+DEL_USER                                                                                                                         PROCEDURE             5                    
+END;                                                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+
+NAME                                                                                                                             TYPE               LINE                    
+-------------------------------------------------------------------------------------------------------------------------------- ------------ ----------                    
+TEXT                                                                                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ORIGIN_CON_ID                                                                                                                                                               
+-------------                                                                                                                                                               
+DEL_OBJECT                                                                                                                       PROCEDURE             1                    
+PROCEDURE del_object(id_to_del     object.id%type)                                                                                                                          
+            0                                                                                                                                                               
+                                                                                                                                                                            
+DEL_OBJECT                                                                                                                       PROCEDURE             2                    
+IS                                                                                                                                                                          
+            0                                                                                                                                                               
+                                                                                                                                                                            
+DEL_OBJECT                                                                                                                       PROCEDURE             3                    
+BEGIN                                                                                                                                                                       
+            0                                                                                                                                                               
+                                                                                                                                                                            
+DEL_OBJECT                                                                                                                       PROCEDURE             4                    
+    DELETE FROM object WHERE id = id_to_del;                                                                                                                                
+            0                                                                                                                                                               
+                                                                                                                                                                            
+DEL_OBJECT                                                                                                                       PROCEDURE             5                    
+END;                                                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+DEL_GROUP_OF_USERS                                                                                                               PROCEDURE             1                    
+PROCEDURE del_group_of_users(id_to_del     group_of_users.entity_id%type)                                                                                                   
+            0                                                                                                                                                               
+                                                                                                                                                                            
+DEL_GROUP_OF_USERS                                                                                                               PROCEDURE             2                    
+IS                                                                                                                                                                          
+            0                                                                                                                                                               
+                                                                                                                                                                            
+DEL_GROUP_OF_USERS                                                                                                               PROCEDURE             3                    
+BEGIN                                                                                                                                                                       
+            0                                                                                                                                                               
+                                                                                                                                                                            
+DEL_GROUP_OF_USERS                                                                                                               PROCEDURE             4                    
+    DELETE FROM group_of_users WHERE entity_id = id_to_del;                                                                                                                 
+            0                                                                                                                                                               
+                                                                                                                                                                            
+
+NAME                                                                                                                             TYPE               LINE                    
+-------------------------------------------------------------------------------------------------------------------------------- ------------ ----------                    
+TEXT                                                                                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ORIGIN_CON_ID                                                                                                                                                               
+-------------                                                                                                                                                               
+DEL_GROUP_OF_USERS                                                                                                               PROCEDURE             5                    
+END;                                                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_USER                                                                                                                         PROCEDURE             1                    
+PROCEDURE add_user(email         user_account.email%type,                                                                                                                   
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_USER                                                                                                                         PROCEDURE             2                    
+                                     name          user_account.name%type,                                                                                                  
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_USER                                                                                                                         PROCEDURE             3                    
+                                     surname       user_account.surname%type,                                                                                               
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_USER                                                                                                                         PROCEDURE             4                    
+                                     pass_hash     user_account.pass_hash%type)                                                                                             
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_USER                                                                                                                         PROCEDURE             5                    
+IS                                                                                                                                                                          
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_USER                                                                                                                         PROCEDURE             6                    
+    new_id      user_entity.id%type;                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_USER                                                                                                                         PROCEDURE             7                    
+BEGIN                                                                                                                                                                       
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_USER                                                                                                                         PROCEDURE             8                    
+    INSERT INTO user_entity (type) VALUES ('user')                                                                                                                          
+            0                                                                                                                                                               
+                                                                                                                                                                            
+
+NAME                                                                                                                             TYPE               LINE                    
+-------------------------------------------------------------------------------------------------------------------------------- ------------ ----------                    
+TEXT                                                                                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ORIGIN_CON_ID                                                                                                                                                               
+-------------                                                                                                                                                               
+ADD_USER                                                                                                                         PROCEDURE             9                    
+    RETURNING id INTO new_id;                                                                                                                                               
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_USER                                                                                                                         PROCEDURE            10                    
+                                                                                                                                                                            
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_USER                                                                                                                         PROCEDURE            11                    
+    INSERT INTO user_account VALUES (new_id, email, name, surname, pass_hash);                                                                                              
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_USER                                                                                                                         PROCEDURE            12                    
+END;                                                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_OBJECT                                                                                                                       FUNCTION              1                    
+FUNCTION add_object(name              object.name%type,                                                                                                                     
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_OBJECT                                                                                                                       FUNCTION              2                    
+                                      type              object.type%type,                                                                                                   
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_OBJECT                                                                                                                       FUNCTION              3                    
+                                      default_access    object.default_access%type,                                                                                         
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_OBJECT                                                                                                                       FUNCTION              4                    
+                                      owner_id          user_entity.id%type)                                                                                                
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_OBJECT                                                                                                                       FUNCTION              5                    
+RETURN object.id%type IS                                                                                                                                                    
+            0                                                                                                                                                               
+                                                                                                                                                                            
+
+NAME                                                                                                                             TYPE               LINE                    
+-------------------------------------------------------------------------------------------------------------------------------- ------------ ----------                    
+TEXT                                                                                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ORIGIN_CON_ID                                                                                                                                                               
+-------------                                                                                                                                                               
+ADD_OBJECT                                                                                                                       FUNCTION              6                    
+    new_id      object.id%type;                                                                                                                                             
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_OBJECT                                                                                                                       FUNCTION              7                    
+BEGIN                                                                                                                                                                       
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_OBJECT                                                                                                                       FUNCTION              8                    
+    INSERT INTO object (name, type, default_access) VALUES (name, type, default_access)                                                                                     
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_OBJECT                                                                                                                       FUNCTION              9                    
+    RETURNING id INTO new_id;                                                                                                                                               
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_OBJECT                                                                                                                       FUNCTION             10                    
+                                                                                                                                                                            
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_OBJECT                                                                                                                       FUNCTION             11                    
+    INSERT INTO entity_access VALUES (new_id, owner_id, 'owner');                                                                                                           
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_OBJECT                                                                                                                       FUNCTION             12                    
+                                                                                                                                                                            
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_OBJECT                                                                                                                       FUNCTION             13                    
+    RETURN new_id;                                                                                                                                                          
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_OBJECT                                                                                                                       FUNCTION             14                    
+END;                                                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+
+NAME                                                                                                                             TYPE               LINE                    
+-------------------------------------------------------------------------------------------------------------------------------- ------------ ----------                    
+TEXT                                                                                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ORIGIN_CON_ID                                                                                                                                                               
+-------------                                                                                                                                                               
+ADD_GROUP                                                                                                                        PROCEDURE             1                    
+PROCEDURE add_group(name              object.name%type,                                                                                                                     
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_GROUP                                                                                                                        PROCEDURE             2                    
+                                      default_access    object.default_access%type,                                                                                         
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_GROUP                                                                                                                        PROCEDURE             3                    
+                                      owner_id          user_entity.id%type)                                                                                                
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_GROUP                                                                                                                        PROCEDURE             4                    
+IS                                                                                                                                                                          
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_GROUP                                                                                                                        PROCEDURE             5                    
+    new_object_id       object.id%type;                                                                                                                                     
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_GROUP                                                                                                                        PROCEDURE             6                    
+    new_entity_id       user_entity.id%type;                                                                                                                                
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_GROUP                                                                                                                        PROCEDURE             7                    
+BEGIN                                                                                                                                                                       
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_GROUP                                                                                                                        PROCEDURE             8                    
+    new_object_id := add_object(name, 'group', default_access, owner_id);                                                                                                   
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_GROUP                                                                                                                        PROCEDURE             9                    
+                                                                                                                                                                            
+            0                                                                                                                                                               
+                                                                                                                                                                            
+
+NAME                                                                                                                             TYPE               LINE                    
+-------------------------------------------------------------------------------------------------------------------------------- ------------ ----------                    
+TEXT                                                                                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ORIGIN_CON_ID                                                                                                                                                               
+-------------                                                                                                                                                               
+ADD_GROUP                                                                                                                        PROCEDURE            10                    
+    INSERT INTO user_entity (type) VALUES ('group')                                                                                                                         
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_GROUP                                                                                                                        PROCEDURE            11                    
+    RETURNING id INTO new_entity_id;                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_GROUP                                                                                                                        PROCEDURE            12                    
+                                                                                                                                                                            
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_GROUP                                                                                                                        PROCEDURE            13                    
+    INSERT INTO group_of_users VALUES (new_entity_id, new_object_id);                                                                                                       
+            0                                                                                                                                                               
+                                                                                                                                                                            
+ADD_GROUP                                                                                                                        PROCEDURE            14                    
+END;                                                                                                                                                                        
+            0                                                                                                                                                               
+                                                                                                                                                                            
+
+104 rows selected.
+
+SQL> begin print_r(try_log('hej', 1)); end;
+  2  /
+begin print_r(try_log('hej', 1)); end;
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7: 
+PLS-00201: identifier 'PRINT_R' must be declared 
+ORA-06550: line 1, column 7: 
+PL/SQL: Statement ignored 
+
+
+SQL> begin print_db(try_log('hej', 1)); end;
+  2  /
+begin print_db(try_log('hej', 1)); end;
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7: 
+PLS-00201: identifier 'PRINT_DB' must be declared 
+ORA-06550: line 1, column 7: 
+PL/SQL: Statement ignored 
+
+
+SQL> begin dbms_output(try_log('hej', 1)); end;
+  2  /
+begin dbms_output(try_log('hej', 1)); end;
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7: 
+PLS-00221: 'DBMS_OUTPUT' is not a procedure or is undefined 
+ORA-06550: line 1, column 7: 
+PL/SQL: Statement ignored 
+
+
+SQL> begin dbms_output.putline(try_log('hej', 1)); end;
+  2  /
+begin dbms_output.putline(try_log('hej', 1)); end;
+                  *
+ERROR at line 1:
+ORA-06550: line 1, column 19: 
+PLS-00302: component 'PUTLINE' must be declared 
+ORA-06550: line 1, column 7: 
+PL/SQL: Statement ignored 
+
+
+SQL> begin DBMS_OUTPUT.PUT_LINE(try_log('hej', 1)); end;
+  2  /
+begin DBMS_OUTPUT.PUT_LINE(try_log('hej', 1)); end;
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at "KP385996.TRY_LOG", line 7 
+ORA-06512: at line 1 
+
+
+SQL> begin DBMS_OUTPUT.PUT_LINE(try_log('hej', 1)); end;
+  2  /
+begin DBMS_OUTPUT.PUT_LINE(try_log('hej', 1)); end;
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at "KP385996.TRY_LOG", line 7 
+ORA-06512: at line 1 
+
+
+SQL> @tmp_code
+
+Function created.
+
+SQL> begin DBMS_OUTPUT.PUT_LINE(try_log('hej', 1)); end;
+  2  /
+begin DBMS_OUTPUT.PUT_LINE(try_log('hej', 1)); end;
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at "KP385996.TRY_LOG", line 7 
+ORA-06512: at line 1 
+
+
+SQL> begin DBMS_OUTPUT.PUT_LINE(try_log('hej', 'a')); end;
+  2  /
+begin DBMS_OUTPUT.PUT_LINE(try_log('hej', 'a')); end;
+*
+ERROR at line 1:
+ORA-06502: PL/SQL: numeric or value error: character to number conversion error 
+ORA-06512: at line 1 
+
+
+SQL> begin DBMS_OUTPUT.PUT_LINE(try_log('hej', 1)); end;
+  2  /
+begin DBMS_OUTPUT.PUT_LINE(try_log('hej', 1)); end;
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at "KP385996.TRY_LOG", line 7 
+ORA-06512: at line 1 
+
+
+SQL> begin DBMS_OUTPUT.PUT_LINE(try_log('hej', 1)); end;
+  2  /
+begin DBMS_OUTPUT.PUT_LINE(try_log('hej', 1)); end;
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at "KP385996.TRY_LOG", line 7 
+ORA-06512: at line 1 
+
+
+SQL> @tmp_code
+
+Warning: Function created with compilation errors.
+
+SQL> show err
+Errors for FUNCTION TRY_LOG:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+7/5      PL/SQL: SQL Statement ignored                                                                                                                                      
+7/93     PL/SQL: ORA-00933: SQL command not properly ended                                                                                                      

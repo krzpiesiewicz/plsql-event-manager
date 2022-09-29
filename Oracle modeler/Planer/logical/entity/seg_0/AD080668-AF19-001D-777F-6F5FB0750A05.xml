@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AD080668-AF19-001D-777F-6F5FB0750A05" name="User">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 14:25:20 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="4A51676E-D5B6-28E3-3B8F-A7C0971DFBC5">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 14:30:57 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Name" id="EFD29628-69DD-9DC0-DEBB-723FB26BEED3">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 14:25:34 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Surname" id="FE828562-31DF-22AC-4719-7F9C5766CF8F">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 14:31:54 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Pass hash" id="AEA056E8-31A4-F3F5-EAC7-49E28E28424F">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 14:32:23 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="241B00A4-2439-8E04-B042-B21B7EC8F741" name="User PK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 14:33:13 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4A51676E-D5B6-28E3-3B8F-A7C0971DFBC5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

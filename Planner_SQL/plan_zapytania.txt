@@ -1,0 +1,42 @@
+        ID NAME                                                                                                 BEGIN_DATE           END_DATE             DEFAULT_
+---------- ---------------------------------------------------------------------------------------------------- -------------------- -------------------- --------
+      6177 Dzien 31.1                                                                                           31.01.2018, 00:00:00 31.01.2018, 23:59:59 read
+      6178 Dzien 1.2                                                                                            01.02.2018, 00:00:00 01.02.2018, 23:59:59 read
+      6179 Dzien 2.2                                                                                            02.02.2018, 00:00:00 02.02.2018, 23:59:59 read
+
+
+Execution Plan
+----------------------------------------------------------
+Plan hash value: 1146246917
+
+--------------------------------------------------------------------------------------------------------------------
+| Id  | Operation                               | Name                     | Rows  | Bytes | Cost (%CPU)| Time     |
+--------------------------------------------------------------------------------------------------------------------
+|   0 | SELECT STATEMENT                        |                          |    27 |  3321 |   297   (1)| 00:00:01 |
+|*  1 |  VIEW                                   |                          |    27 |  3321 |   297   (1)| 00:00:01 |
+|*  2 |   WINDOW SORT PUSHED RANK               |                          |    27 |  4536 |   297   (1)| 00:00:01 |
+|*  3 |    FILTER                               |                          |       |       |            |          |
+|*  4 |     HASH JOIN                           |                          |   275 | 46200 |   296   (0)| 00:00:01 |
+|*  5 |      TABLE ACCESS BY INDEX ROWID BATCHED| EVENT                    |   275 | 10725 |   232   (0)| 00:00:01 |
+|*  6 |       INDEX RANGE SCAN                  | EVENT_BY_BEGIN_DATE__IDX |   275 |       |    15   (0)| 00:00:01 |
+|   7 |      TABLE ACCESS BY INDEX ROWID BATCHED| OBJECT                   |   760 | 98040 |    64   (0)| 00:00:01 |
+|*  8 |       INDEX RANGE SCAN                  | TYPE_AND_UPPER_NAME__IDX |    88 |       |    22   (0)| 00:00:01 |
+|*  9 |     INDEX UNIQUE SCAN                   | SYS_C001234138           |     1 |    26 |     1   (0)| 00:00:01 |
+--------------------------------------------------------------------------------------------------------------------
+
+Predicate Information (identified by operation id):
+---------------------------------------------------
+
+   1 - filter("from$_subquery$_008"."rowlimit_$$_rownumber"<=0+10 AND
+              "from$_subquery$_008"."rowlimit_$$_rownumber">0)
+   2 - filter(ROW_NUMBER() OVER ( ORDER BY "BEGIN_DATE")<=0+10)
+   3 - filter("DEFAULT_ACCESS"<>'denied' OR  EXISTS (SELECT 0 FROM "ENTITY_ACCESS" "ENTITY_ACCESS" WHERE
+              "ENTITY_ID"=64 AND "OBJECT_ID"=:B1))
+   4 - access("ID"="ID")
+   5 - filter("ID">0)
+   6 - access("BEGIN_DATE">=TIMESTAMP' 2018-01-30 11:50:56.000000000' AND "END_DATE"<=TIMESTAMP' 2018-02-03
+              11:50:56.000000000')
+       filter("END_DATE"<=TIMESTAMP' 2018-02-03 11:50:56.000000000')
+   8 - access("TYPE"='event')
+       filter(UPPER("NAME") LIKE '%DZIEN%')
+   9 - access("OBJECT_ID"=:B1 AND "ENTITY_ID"=64)

@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E2C3E9C-0B1E-7A65-FC5C-68B66DEEB7D0" name="Calendar">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>A3AE1DAB-9ED9-EB04-0DE8-ECA0BB1BF35F</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="4D88B32D-2FC9-4961-73AC-E6BEBB5F7BBC">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>ED96BED7-7884-8BD2-E969-2AD7FC92D0CF</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06AF0F72-1A40-5250-9153-6CA2CDEC8717" referredColumn="66254F3C-4435-52E9-A346-5834201F73E1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5215D7CF-AE01-7938-6D4F-DBCBF3170ADE" name="Calendar_PK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>25F82F60-0B57-CEF8-A643-751013BF73FC</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D88B32D-2FC9-4961-73AC-E6BEBB5F7BBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B58C1C4-CFE8-3C74-0875-F08E3C5B6619" name="Calendar_Tagged_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>DE0063E6-6B93-CDAD-340F-2886CEBC1B2B</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D88B32D-2FC9-4961-73AC-E6BEBB5F7BBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Entity access" directorySegmentName="seg_0" id="19675D0A-4E38-C151-9163-2646030DB93D">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 14:45:44 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetPk>50298CB6-388C-025B-4625-F26F8B7CA844</targetPk>
+<identifying>false</identifying>
+<nameOnSource>for whom</nameOnSource>
+<nameOnTarget>has an access</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>E327C184-5594-9B57-E416-891EBCCEB21D</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>61E22986-D3CD-0C0D-DC08-D6586E3ACB33</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

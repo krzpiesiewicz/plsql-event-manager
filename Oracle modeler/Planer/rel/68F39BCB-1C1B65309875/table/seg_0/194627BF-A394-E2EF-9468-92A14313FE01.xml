@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="194627BF-A394-E2EF-9468-92A14313FE01" name="Tagged">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>6DA843FC-A0AE-4F37-8379-406071932075</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="66254F3C-4435-52E9-A346-5834201F73E1">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>ED96BED7-7884-8BD2-E969-2AD7FC92D0CF</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BD9A365A-9E07-5190-6A39-CB8D46614614" referredColumn="0483DB5D-0E91-E825-C28F-76EB1ED79758"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B73B673-0E08-E25C-C1F9-A5CB8F63B894" name="Tagged_PK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>25F82F60-0B57-CEF8-A643-751013BF73FC</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66254F3C-4435-52E9-A346-5834201F73E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ACB18637-0AD8-FA6A-6C68-FE327FE7E159" name="Tagged_Object_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>1DDB43C9-F800-C3D9-847A-D974838AE2F6</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66254F3C-4435-52E9-A346-5834201F73E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

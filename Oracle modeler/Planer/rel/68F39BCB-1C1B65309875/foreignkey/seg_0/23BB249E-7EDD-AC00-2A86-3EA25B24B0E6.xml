@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="23BB249E-7EDD-AC00-2A86-3EA25B24B0E6" containerWithKeyObject="80F0DA91-3F6E-F566-E184-0B8C082D2529" localFKIndex="731FB1D0-A750-7F78-3F1D-C4886BC06964" name="Event_in_calendar_Calendar_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:35 UTC</createdTime>
+<generatorID>D739EC57-B106-BCD2-A6CB-DD65E46A86D3</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<referredTableLongName>Calendar</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8E2C3E9C-0B1E-7A65-FC5C-68B66DEEB7D0</referredTableID>
+<keyObject>5215D7CF-AE01-7938-6D4F-DBCBF3170ADE</keyObject>
+<referredKeyID>5215D7CF-AE01-7938-6D4F-DBCBF3170ADE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

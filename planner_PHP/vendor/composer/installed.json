@@ -1,0 +1,53 @@
+[
+    {
+        "name": "eloquent/enumeration",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/eloquent/enumeration.git",
+            "reference": "9a5bb7729c5353b9d51c960c9da1a82bad97ef23"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/eloquent/enumeration/zipball/9a5bb7729c5353b9d51c960c9da1a82bad97ef23",
+            "reference": "9a5bb7729c5353b9d51c960c9da1a82bad97ef23",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4"
+        },
+        "time": "2017-11-14T10:26:46+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Eloquent\\Enumeration\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Erin Millard",
+                "email": "ezzatron@gmail.com",
+                "homepage": "http://ezzatron.com/"
+            }
+        ],
+        "description": "An enumeration implementation for PHP.",
+        "homepage": "https://github.com/eloquent/enumeration",
+        "keywords": [
+            "class",
+            "enum",
+            "enumeration",
+            "multiton",
+            "set",
+            "type"
+        ]
+    }
+]

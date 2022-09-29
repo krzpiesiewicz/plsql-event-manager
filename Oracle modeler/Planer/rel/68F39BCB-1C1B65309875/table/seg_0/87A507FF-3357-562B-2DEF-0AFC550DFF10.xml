@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87A507FF-3357-562B-2DEF-0AFC550DFF10" name="Event">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>6F17885D-CD8F-9338-DB97-4C8121A14794</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="056483CE-4DB1-EE0C-9AA8-CD39A264C404">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>ED96BED7-7884-8BD2-E969-2AD7FC92D0CF</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07E61289-D3AD-2287-270E-D8B69B174C46" referredColumn="66254F3C-4435-52E9-A346-5834201F73E1"/>
+</associations>
+</Column>
+<Column name="Begin_Date" id="89067024-EDDC-BAD0-0275-724701CEA111">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>BACBD7C3-5D6A-C327-C5EF-D723F5F070B7</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="End_Date" id="472AE85F-74F0-A198-E527-C49019724148">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>E9A3DFEF-04E9-E253-91C9-A621E617B6AE</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D48F924E-8E52-384D-907B-5AB9F3960B54" name="Event_PK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>25F82F60-0B57-CEF8-A643-751013BF73FC</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="056483CE-4DB1-EE0C-9AA8-CD39A264C404"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB7CE4A4-DCCB-1F27-B512-DEBF7B65F6BC" name="Event_Tagged_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>B2CE0BB8-703B-8DF1-C6C2-6E9C038F33ED</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="056483CE-4DB1-EE0C-9AA8-CD39A264C404"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

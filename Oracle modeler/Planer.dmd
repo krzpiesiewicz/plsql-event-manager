@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Planer" id="C96E19B4-E9BA-C522-7D0B-81184654C83E" version="3.5">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 14:14:31 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C96E19B4-E9BA-C522-7D0B-81184654C83E</designId>
+</OSDM_Design>

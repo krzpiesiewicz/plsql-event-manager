@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5A03309F-0CA0-9D60-E3C2-2C0730ECC953" name="Access type">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 14:36:45 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Name" id="774C1F45-F9F9-7A74-3293-CF4086D061FD">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 14:39:17 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="05A3F99A-548E-4491-A74D-B4BE5A5D91B1" name="Access type PK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 14:39:26 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>774C1F45-F9F9-7A74-3293-CF4086D061FD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

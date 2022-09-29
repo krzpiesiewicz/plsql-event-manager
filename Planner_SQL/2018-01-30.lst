@@ -1,0 +1,104 @@
+
+SQL> select * from user_account;
+
+        ID NAME                           SURNAME                                                      EMAIL                                                                
+---------- ------------------------------ ------------------------------------------------------------ ------------------------------------------------------------         
+PASS_HASH                                                                                                                                                                   
+----------------------------------------------------------------------------------------------------                                                                        
+        63 Krzysztof                      Piesiewicz                                                   kp385996@gmail.com                                                   
+0105908c122dbbe5966e07993f720e5cec6e0cff                                                                                                                                    
+                                                                                                                                                                            
+        64 Bot                            Bot                                                          bot@bot.com                                                          
+59f67ec64ec559b43a59c48f822a2cf9fefd01a2                                                                                                                                    
+                                                                                                                                                                            
+        81 Barbara                        Poszewiecka                                                  b.poszewiecka@mimuw.edu.pl                                           
+1266877900646b30582c080b839ade07ca87ac52                                                                                                                                    
+                                                                                                                                                                            
+        82 Jan                            Kowalski                                                     jk@gmail.co                                                          
+dddd5d7b474d2c78ebbb833789c4bfd721edf4bf                                                                                                                                    
+                                                                                                                                                                            
+
+SQL> @tmp_code
+write                                                                                                                                                                       
+
+PL/SQL procedure successfully completed.
+
+SQL> @tmp_code
+
+Procedure created.
+
+SQL> @tmp_code
+
+Procedure created.
+
+SQL> select * from user_account;
+
+        ID NAME                           SURNAME                                                      EMAIL                                                                
+---------- ------------------------------ ------------------------------------------------------------ ------------------------------------------------------------         
+PASS_HASH                                                                                                                                                                   
+----------------------------------------------------------------------------------------------------                                                                        
+        63 Krzysztof                      Piesiewicz                                                   kp385996@gmail.com                                                   
+0105908c122dbbe5966e07993f720e5cec6e0cff                                                                                                                                    
+                                                                                                                                                                            
+        64 Bot                            Bot                                                          bot@bot.com                                                          
+59f67ec64ec559b43a59c48f822a2cf9fefd01a2                                                                                                                                    
+                                                                                                                                                                            
+        81 Barbara                        Poszewiecka                                                  b.poszewiecka@mimuw.edu.pl                                           
+1266877900646b30582c080b839ade07ca87ac52                                                                                                                                    
+                                                                                                                                                                            
+        82 Jan                            Kowalski                                                     jk@gmail.co                                                          
+dddd5d7b474d2c78ebbb833789c4bfd721edf4bf                                                                                                                                    
+                                                                                                                                                                            
+
+SQL> @tmp_code
+owner                                                                                                                                                                       
+
+PL/SQL procedure successfully completed.
+
+SQL> @tmp_code
+owner                                                                                                                                                                       
+owner                                                                                                                                                                       
+del                                                                                                                                                                         
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from object where id = 6885;
+
+no rows selected
+
+SQL> @tmp_code
+begin
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at "KP385996.GET_USER_ACCESS_TO_OBJECT", line 11 
+ORA-06512: at line 2 
+
+
+SQL> select * from event where id = 6885;
+
+no rows selected
+
+SQL> select * from object where name = 'temp';
+
+no rows selected
+
+SQL> select * from object where id = 6886;
+
+        ID NAME                                                                                                 TYPE     DEFAULT_                                           
+---------- ---------------------------------------------------------------------------------------------------- -------- --------                                           
+      6886 temp23                                                                                               event    denied                                             
+
+SQL> @tmp_code
+
+Procedure created.
+
+begin
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at "KP385996.GET_USER_ACCESS_TO_OBJECT", line 11 
+ORA-06512: at line 2 
+
+
+SQL> exit

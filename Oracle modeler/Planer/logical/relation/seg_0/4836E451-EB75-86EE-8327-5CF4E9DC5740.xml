@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Event - calendar event" directorySegmentName="seg_0" id="4836E451-EB75-86EE-8327-5CF4E9DC5740">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:58:07 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<sourcePk>25F82F60-0B57-CEF8-A643-751013BF73FC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6F17885D-CD8F-9338-DB97-4C8121A14794</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>0E6C0F81-7E8B-67E6-7278-51187AE2383D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

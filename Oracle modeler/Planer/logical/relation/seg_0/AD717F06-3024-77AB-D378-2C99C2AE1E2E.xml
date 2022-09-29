@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Group entity" directorySegmentName="seg_0" id="AD717F06-3024-77AB-D378-2C99C2AE1E2E">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:16:45 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<targetTransferable>false</targetTransferable>
+<sourcePk>25F82F60-0B57-CEF8-A643-751013BF73FC</sourcePk>
+<targetPk>50298CB6-388C-025B-4625-F26F8B7CA844</targetPk>
+<arc>AF899DFA-4F9B-D31D-823F-C6AC6FD538C0</arc>
+<identifying>false</identifying>
+<nameOnSource>is an entity</nameOnSource>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D3248B49-4DF2-984E-DF62-3661C44716BE</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>61E22986-D3CD-0C0D-DC08-D6586E3ACB33</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

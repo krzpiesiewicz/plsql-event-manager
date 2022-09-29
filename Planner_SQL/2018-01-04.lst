@@ -1,0 +1,4021 @@
+SQL> @list_tables
+
+TABLE_NAME                                                                                                                                                                  
+--------------------------------------------------------------------------------------------------------------------------------                                            
+WYPOZYCZENIA                                                                                                                                                                
+WALKI                                                                                                                                                                       
+SALGRADE                                                                                                                                                                    
+OSOBY                                                                                                                                                                       
+OSOBA                                                                                                                                                                       
+NAUKOWIEC                                                                                                                                                                   
+MALZENSTWO                                                                                                                                                                  
+KSIAZKI                                                                                                                                                                     
+KLUBY                                                                                                                                                                       
+KAT_WAGOWE                                                                                                                                                                  
+GATUNKI                                                                                                                                                                     
+ENTITY_ACCESS                                                                                                                                                               
+EMP                                                                                                                                                                         
+DUMMY                                                                                                                                                                       
+DOWOD                                                                                                                                                                       
+DEPT                                                                                                                                                                        
+BONUS                                                                                                                                                                       
+BOKSERZY                                                                                                                                                                    
+ADRES                                                                                                                                                                       
+ACCESS_TYPE                                                                                                                                                                 
+
+20 rows selected.
+
+SQL> @create_tables
+DROP TABLE object_type
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+)
+*
+ERROR at line 3:
+ORA-00904: : invalid identifier 
+
+
+INSERT INTO object_type VALUES ('tag')
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+INSERT INTO object_type VALUES ('group')
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+INSERT INTO object_type VALUES ('event')
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+INSERT INTO object_type VALUES ('calendar')
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> @create_tables
+DROP TABLE object_type
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+CREATE TABLE access_type (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+CREATE TABLE access_type (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+	type 			type.name%type REFERENCES object_type NOT NULL,
+	     			         *
+ERROR at line 4:
+ORA-00911: invalid character 
+
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+	type 			type.name%type REFERENCES object_type NOT NULL,
+	     			         *
+ERROR at line 4:
+ORA-00911: invalid character 
+
+
+
+Commit complete.
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+	type1 			type.name%type REFERENCES object_type NOT NULL,
+	      			         *
+ERROR at line 4:
+ORA-00911: invalid character 
+
+
+
+Commit complete.
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+	type 			object_type.name%type REFERENCES object_type NOT NULL,
+	     			                *
+ERROR at line 4:
+ORA-00911: invalid character 
+
+
+
+Commit complete.
+
+SQL> CREATE TABLESPACE Planer;
+CREATE TABLESPACE Planer
+                       *
+ERROR at line 1:
+ORA-02199: missing DATAFILE/TEMPFILE clause 
+
+
+SQL> CREATE TABLESPACE Planer;
+CREATE TABLESPACE Planer
+                       *
+ERROR at line 1:
+ORA-02199: missing DATAFILE/TEMPFILE clause 
+
+
+SQL> ;
+  1* CREATE TABLESPACE Planer
+SQL> ;
+  1* CREATE TABLESPACE Planer
+SQL> ;;
+SP2-0042: unknown command ";" - rest of line ignored.
+SQL> ;;;;;;;;;;;;;;;;;;;;;;;;;
+SP2-0734: unknown command beginning ";;;;;;;;;;..." - rest of line ignored.
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Commit complete.
+
+SQL> @create_tables
+DROP TABLE object_type
+           *
+ERROR at line 1:
+ORA-02449: unique/primary keys in table referenced by foreign keys 
+
+
+
+Table dropped.
+
+
+Table dropped.
+
+CREATE TABLE object_type (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+INSERT INTO object_type VALUES ('tag')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KP385996.SYS_C00751585) violated 
+
+
+INSERT INTO object_type VALUES ('group')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KP385996.SYS_C00751585) violated 
+
+
+INSERT INTO object_type VALUES ('event')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KP385996.SYS_C00751585) violated 
+
+
+INSERT INTO object_type VALUES ('calendar')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KP385996.SYS_C00751585) violated 
+
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @create_tables
+DROP TABLE object_type
+           *
+ERROR at line 1:
+ORA-02449: unique/primary keys in table referenced by foreign keys 
+
+
+
+Table dropped.
+
+DROP TABLE object_type
+           *
+ERROR at line 1:
+ORA-02449: unique/primary keys in table referenced by foreign keys 
+
+
+DROP TABLE object
+           *
+ERROR at line 1:
+ORA-02449: unique/primary keys in table referenced by foreign keys 
+
+
+
+Table dropped.
+
+CREATE TABLE object_type (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+INSERT INTO object_type VALUES ('tag')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KP385996.SYS_C00751585) violated 
+
+
+INSERT INTO object_type VALUES ('group')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KP385996.SYS_C00751585) violated 
+
+
+INSERT INTO object_type VALUES ('event')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KP385996.SYS_C00751585) violated 
+
+
+INSERT INTO object_type VALUES ('calendar')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KP385996.SYS_C00751585) violated 
+
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+CREATE TABLE object (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+
+Table created.
+
+SQL> @create_tables
+DROP TABLE object_type
+           *
+ERROR at line 1:
+ORA-02449: unique/primary keys in table referenced by foreign keys 
+
+
+
+Table dropped.
+
+DROP TABLE object_type
+           *
+ERROR at line 1:
+ORA-02449: unique/primary keys in table referenced by foreign keys 
+
+
+DROP TABLE object
+           *
+ERROR at line 1:
+ORA-02449: unique/primary keys in table referenced by foreign keys 
+
+
+
+Table dropped.
+
+CREATE TABLE object_type (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+INSERT INTO object_type VALUES ('tag')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KP385996.SYS_C00751585) violated 
+
+
+INSERT INTO object_type VALUES ('group')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KP385996.SYS_C00751585) violated 
+
+
+INSERT INTO object_type VALUES ('event')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KP385996.SYS_C00751585) violated 
+
+
+INSERT INTO object_type VALUES ('calendar')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KP385996.SYS_C00751585) violated 
+
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+CREATE TABLE object (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+
+Table created.
+
+SQL> @listtables
+SP2-0310: unable to open file "listtables.sql"
+SQL> @tables
+SP2-0310: unable to open file "tables.sql"
+SQL> @list_tables
+
+TABLE_NAME                                                                                                                                                                  
+--------------------------------------------------------------------------------------------------------------------------------                                            
+WYPOZYCZENIA                                                                                                                                                                
+WALKI                                                                                                                                                                       
+TAGGING                                                                                                                                                                     
+TAGGED                                                                                                                                                                      
+SALGRADE                                                                                                                                                                    
+OSOBY                                                                                                                                                                       
+OSOBA                                                                                                                                                                       
+OBJECT_TYPE                                                                                                                                                                 
+OBJECT                                                                                                                                                                      
+NAUKOWIEC                                                                                                                                                                   
+MALZENSTWO                                                                                                                                                                  
+KSIAZKI                                                                                                                                                                     
+KLUBY                                                                                                                                                                       
+KAT_WAGOWE                                                                                                                                                                  
+GATUNKI                                                                                                                                                                     
+ENTITY_ACCESS                                                                                                                                                               
+EMP                                                                                                                                                                         
+DUMMY                                                                                                                                                                       
+DOWOD                                                                                                                                                                       
+DEPT                                                                                                                                                                        
+BONUS                                                                                                                                                                       
+BOKSERZY                                                                                                                                                                    
+ADRES                                                                                                                                                                       
+ACCESS_TYPE                                                                                                                                                                 
+
+24 rows selected.
+
+SQL> show access_type
+SP2-0735: unknown SHOW option beginning "access_typ..."
+SQL> @show_table access_type
+SP2-0310: unable to open file "show_table.sql"
+SQL> @table access_type
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ NAME                                                                                             NOT NULL VARCHAR2(8)
+
+old   2:   FROM &1
+new   2:   FROM access_type
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+full                                                                                                                                                                        
+write                                                                                                                                                                       
+read                                                                                                                                                                        
+denied                                                                                                                                                                      
+
+SQL> @table object_type
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ NAME                                                                                             NOT NULL VARCHAR2(8 CHAR)
+
+old   2:   FROM &1
+new   2:   FROM object_type
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+calendar                                                                                                                                                                    
+event                                                                                                                                                                       
+group                                                                                                                                                                       
+tag                                                                                                                                                                         
+
+SQL> DROP TABLE object;
+DROP TABLE object
+           *
+ERROR at line 1:
+ORA-02449: unique/primary keys in table referenced by foreign keys 
+
+
+SQL> DROP TABLE object CASCADE CONSTRAINTS;
+
+Table dropped.
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+DROP TABLE object_type CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE object CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+CREATE TABLE object (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+CREATE TABLE tagging (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+CREATE TABLE entity_access (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+)
+*
+ERROR at line 3:
+ORA-00904: : invalid identifier 
+
+
+INSERT INTO user_entity_type VALUES ('user')
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+INSERT INTO user_entity_type VALUES ('group')
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+DROP TABLE user_entity_type CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table dropped.
+
+DROP TABLE user_entity CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+)
+*
+ERROR at line 3:
+ORA-00904: : invalid identifier 
+
+
+INSERT INTO user_entity_type VALUES ('user')
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+INSERT INTO user_entity_type VALUES ('group')
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+	type	VARCHAR2(8 CHAR) REFERENCES user_entity_type NOT NULL
+	    	                                                    *
+ERROR at line 3:
+ORA-00907: missing right parenthesis 
+
+
+SP2-0042: unknown command ")" - rest of line ignored.
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+DROP TABLE user_entity_type CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table dropped.
+
+DROP TABLE user_entity CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+)
+*
+ERROR at line 3:
+ORA-00904: : invalid identifier 
+
+
+INSERT INTO user_entity_type VALUES ('user')
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+INSERT INTO user_entity_type VALUES ('group')
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+	type	VARCHAR2(8 CHAR) REFERENCES user_entity_type NOT NULL
+	    	                                                    *
+ERROR at line 3:
+ORA-00907: missing right parenthesis 
+
+
+SP2-0042: unknown command ")" - rest of line ignored.
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+DROP TABLE user_entity_type CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table dropped.
+
+DROP TABLE user_entity CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+)
+*
+ERROR at line 3:
+ORA-00904: : invalid identifier 
+
+
+INSERT INTO user_entity_type VALUES ('user')
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+INSERT INTO user_entity_type VALUES ('group')
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+	type	VARCHAR2(8 CHAR) REFERENCES user_entity_type NOT NULL
+	    	                                                    *
+ERROR at line 3:
+ORA-00907: missing right parenthesis 
+
+
+SP2-0042: unknown command ")" - rest of line ignored.
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+CREATE TABLE entity_access (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+)
+*
+ERROR at line 3:
+ORA-00904: : invalid identifier 
+
+
+INSERT INTO user_entity_type VALUES ('user')
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+INSERT INTO user_entity_type VALUES ('group')
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+	type	VARCHAR2(8 CHAR) REFERENCES user_entity_type NOT NULL
+	    	                                                    *
+ERROR at line 3:
+ORA-00907: missing right parenthesis 
+
+
+SP2-0042: unknown command ")" - rest of line ignored.
+SQL> @list_tables
+
+TABLE_NAME                                                                                                                                                                  
+--------------------------------------------------------------------------------------------------------------------------------                                            
+WYPOZYCZENIA                                                                                                                                                                
+WALKI                                                                                                                                                                       
+TAGGING                                                                                                                                                                     
+TAGGED                                                                                                                                                                      
+SALGRADE                                                                                                                                                                    
+OSOBY                                                                                                                                                                       
+OSOBA                                                                                                                                                                       
+OBJECT_TYPE                                                                                                                                                                 
+OBJECT                                                                                                                                                                      
+NAUKOWIEC                                                                                                                                                                   
+MALZENSTWO                                                                                                                                                                  
+KSIAZKI                                                                                                                                                                     
+KLUBY                                                                                                                                                                       
+KAT_WAGOWE                                                                                                                                                                  
+GATUNKI                                                                                                                                                                     
+ENTITY_ACCESS                                                                                                                                                               
+EMP                                                                                                                                                                         
+DUMMY                                                                                                                                                                       
+DOWOD                                                                                                                                                                       
+DEPT                                                                                                                                                                        
+BONUS                                                                                                                                                                       
+BOKSERZY                                                                                                                                                                    
+ADRES                                                                                                                                                                       
+ACCESS_TYPE                                                                                                                                                                 
+
+24 rows selected.
+
+SQL> @list_tables
+
+TABLE_NAME                                                                                                                                                                  
+--------------------------------------------------------------------------------------------------------------------------------                                            
+WYPOZYCZENIA                                                                                                                                                                
+WALKI                                                                                                                                                                       
+TAGGING                                                                                                                                                                     
+TAGGED                                                                                                                                                                      
+SALGRADE                                                                                                                                                                    
+OSOBY                                                                                                                                                                       
+OSOBA                                                                                                                                                                       
+OBJECT_TYPE                                                                                                                                                                 
+OBJECT                                                                                                                                                                      
+NAUKOWIEC                                                                                                                                                                   
+MALZENSTWO                                                                                                                                                                  
+KSIAZKI                                                                                                                                                                     
+KLUBY                                                                                                                                                                       
+KAT_WAGOWE                                                                                                                                                                  
+GATUNKI                                                                                                                                                                     
+ENTITY_ACCESS                                                                                                                                                               
+EMP                                                                                                                                                                         
+DUMMY                                                                                                                                                                       
+DOWOD                                                                                                                                                                       
+DEPT                                                                                                                                                                        
+BONUS                                                                                                                                                                       
+BOKSERZY                                                                                                                                                                    
+ADRES                                                                                                                                                                       
+ACCESS_TYPE                                                                                                                                                                 
+
+24 rows selected.
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+DROP TABLE user_entity_type CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE user_entity CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+	PRIMARY KEY (object_id, user_id)
+	                        *
+ERROR at line 5:
+ORA-00904: "USER_ID": invalid identifier 
+
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+DROP TABLE entity_access CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+CREATE TABLE user (
+             *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+	object_id	INTEGER REFERENCES object FOREIGN KEY NOT NULL
+	         	                          *
+ERROR at line 3:
+ORA-00907: missing right parenthesis 
+
+
+	PRIMARY KEY (container_id, included_id) CHECK container_id IS NOT included_id
+	                                        *
+ERROR at line 4:
+ORA-00907: missing right parenthesis 
+
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+	object_id	INTEGER REFERENCES object FOREIGN KEY NOT NULL
+	         	                          *
+ERROR at line 3:
+ORA-00907: missing right parenthesis 
+
+
+	PRIMARY KEY (container_id, included_id) CHECK container_id IS NOT included_id
+	                                        *
+ERROR at line 4:
+ORA-00907: missing right parenthesis 
+
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+CREATE TABLE user_acount (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+	object_id	INTEGER REFERENCES object FOREIGN KEY NOT NULL
+	         	                          *
+ERROR at line 3:
+ORA-00907: missing right parenthesis 
+
+
+	CHECK container_id IS NOT included_id
+	      *
+ERROR at line 5:
+ORA-00906: missing left parenthesis 
+
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+CREATE TABLE user_acount (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+	object_id	INTEGER REFERENCES object FOREIGN KEY NOT NULL
+	         	                          *
+ERROR at line 3:
+ORA-00907: missing right parenthesis 
+
+
+	CHECK (container_id IS NOT included_id)
+	                           *
+ERROR at line 5:
+ORA-00908: missing NULL keyword 
+
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+CREATE TABLE user_acount (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+	object_id	INTEGER REFERENCES object FOREIGN KEY NOT NULL
+	         	                          *
+ERROR at line 3:
+ORA-00907: missing right parenthesis 
+
+
+	container_id	INTEGER REFERENCES group_of_users NOT NULL,
+	            	                   *
+ERROR at line 2:
+ORA-00942: table or view does not exist 
+
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+CREATE TABLE user_acount (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+	object_idSQL> @list_tables
+
+TABLE_NAME                                                                                                                                                                  
+--------------------------------------------------------------------------------------------------------------------------------                                            
+WYPOZYCZENIA                                                                                                                                                                
+WALKI                                                                                                                                                                       
+USER_ENTITY_TYPE                                                                                                                                                            
+USER_ENTITY                                                                                                                                                                 
+USER_ACOUNT                                                                                                                                                                 
+TAGGING                                                                                                                                                                     
+TAGGED                                                                                                                                                                      
+SALGRADE                                                                                                                                                                    
+OSOBY                                                                                                                                                                       
+OSOBA                                                                                                                                                                       
+OBJECT_TYPE                                                                                                                                                                 
+OBJECT                                                                                                                                                                      
+NAUKOWIEC                                                                                                                                                                   
+MALZENSTWO                                                                                                                                                                  
+KSIAZKI                                                                                                                                                                     
+KLUBY                                                                                                                                                                       
+KAT_WAGOWE                                                                                                                                                                  
+GROUP_OF_USERS                                                                                                                                                              
+GATUNKI                                                                                                                                                                     
+ENTITY_CONTAINING                                                                                                                                                           
+ENTITY_ACCESS                                                                                                                                                               
+EMP                                                                                               SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+DROP TABLE event CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE event_in_calendar CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Sequence dropped.
+
+
+Sequence created.
+
+139  @create_tables
+381  1
+382  aaa
+383  
+384  qqqqqqqqqqqqqqqqqqqqqqq
+385  EXIT
+386  qquit
+387  ;;;
+388  )
+389  (
+390  ,
+391  
+SQL> 
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+DROP TABLE event CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE event_in_calendar CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Sequence dropped.
+
+
+Sequence created.
+
+
+Warning: Trigger created with compilation errors.
+
+
+Table created.
+
+
+Table created.
+
+
+Commit complete.
+
+SQL> @create_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Sequence dropped.
+
+
+Sequence created.
+
+
+Trigger created.
+
+
+Table created.
+
+
+Table created.
+
+
+Commit complete.
+
+SQL> 
+SQL> @tables
+SP2-0310: unable to open file "tables.sql"
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   2:   FROM &1
+new   2:   FROM object
+
+no rows selected
+
+SQL> @tables
+SP2-0310: unable to open file "tables.sql"
+SQL> @tables
+SP2-0310: unable to open file "tabel.sql"
+SP2-0310: unable to open file "tabel.sql"
+SP2-0310: unable to open file "tabel.sql"
+SP2-0310: unable to open file "tabel.sql"
+SP2-0310: unable to open file "tabel.sql"
+SP2-0310: unable to open file "tabel.sql"
+SP2-0310: unable to open file "tabel.sql"
+SP2-0310: unable to open file "tabel.sql"
+SP2-0310: unable to open file "tabel.sql"
+SP2-0310: unable to open file "tabel.sql"
+SP2-0310: unable to open file "tabel.sql"
+SP2-0310: unable to open file "tabel.sql"
+SQL> @tables
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ NAME                                                                                             NOT NULL VARCHAR2(8 CHAR)
+
+old   2:   FROM &1
+new   2:   FROM object_type
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+calendar                                                                                                                                                                    
+event                                                                                                                                                                       
+group                                                                                                                                                                       
+tag                                                                                                                                                                         
+
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ NAME                                                                                             NOT NULL VARCHAR2(8)
+
+old   2:   FROM &1
+new   2:   FROM access_type
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+full                                                                                                                                                                        
+write                                                                                                                                                                       
+read                                                                                                                                                                        
+denied                                                                                                                                                                      
+
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   2:   FROM &1
+new   2:   FROM object
+
+no rows selected
+
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ TAG_ID                                                                                           NOT NULL NUMBER(38)
+ TAGGED_ID                                                                                        NOT NULL NUMBER(38)
+
+old   2:   FROM &1
+new   2:   FROM tagging
+
+no rows selected
+
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ NAME                                                                                             NOT NULL VARCHAR2(8 CHAR)
+
+old   2:   FROM &1
+new   2:   FROM user_entity_type
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+group                                                                                                                                                                       
+user                                                                                                                                                                        
+
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ TYPE                                                                                             NOT NULL VARCHAR2(8 CHAR)
+
+old   2:   FROM &1
+new   2:   FROM user_entity
+
+no rows selected
+
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ OBJECT_ID                                                                                        NOT NULL NUMBER(38)
+ ENTITY_ID                                                                                        NOT NULL NUMBER(38)
+ ACCESS_TYPE_NAME                                                                                 NOT NULL VARCHAR2(8)
+
+old   2:   FROM &1
+new   2:   FROM entity_access
+
+no rows selected
+
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(20 CHAR)
+ SURNAME                                                                                          NOT NULL VARCHAR2(40 CHAR)
+ PASS_HASH                                                                                        NOT NULL NUMBER(38)
+
+old   2:   FROM &1
+new   2:   FROM user_acount
+
+no rows selected
+
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ENTITY_ID                                                                                        NOT NULL NUMBER(38)
+ OBJECT_ID                                                                                        NOT NULL NUMBER(38)
+
+old   2:   FROM &1
+new   2:   FROM group_of_users
+
+no rows selected
+
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ CONTAINER_ID                                                                                     NOT NULL NUMBER(38)
+ INCLUDED_ID                                                                                      NOT NULL NUMBER(38)
+
+old   2:   FROM &1
+new   2:   FROM entity_containing
+
+no rows selected
+
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ BEGIN_DATE                                                                                       NOT NULL DATE
+ END_DATE                                                                                         NOT NULL DATE
+
+old   2:   FROM &1
+new   2:   FROM event
+
+no rows selected
+
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ CALENDAR_ID                                                                                      NOT NULL NUMBER(38)
+ EVENT_ID                                                                                         NOT NULL NUMBER(38)
+
+old   2:   FROM &1
+new   2:   FROM event_in_calendar
+
+no rows selected
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+SQL> @table object
+old   1: SELECT * FROM &1
+new   1: SELECT * FROM object
+
+no rows selected
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+  7  ;
+  8  ;
+  9  
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+SP2-0734: unknown command beginning "PREPARE pr..." - rest of line ignored.
+BEGIN print_table USING object; END;
+
+                  *
+ERROR at line 1:
+ORA-06550: line 1, column 19: 
+PLS-00103: Encountered the symbol "USING" when expecting one of the following: 
+:= . ( @ % ; 
+
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+  7  ;
+  8  ;
+  9  
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+  8  
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+  8  
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+  9  
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+  8  ;
+  9  
+SQL> DECLARE
+  2      print_table VARCHAR(50)
+  3  BEGIN
+  4      print_table := 'SELECT * FROM ?';
+  5      EXECUTE IMMEDIATE print_table USING &1;
+  6  END;
+  7  /
+Enter value for 1: object
+old   5:     EXECUTE IMMEDIATE print_table USING &1;
+new   5:     EXECUTE IMMEDIATE print_table USING object;
+BEGIN
+*
+ERROR at line 3:
+ORA-06550: line 3, column 1: 
+PLS-00103: Encountered the symbol "BEGIN" when expecting one of the following: 
+:= ; not null default character 
+The symbol ";" was substituted for "BEGIN" to continue. 
+
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+  8  /
+old   5:     EXECUTE IMMEDIATE print_table USING &1;
+new   5:     EXECUTE IMMEDIATE print_table USING object;
+    EXECUTE IMMEDIATE print_table USING object;
+                                        *
+ERROR at line 5:
+ORA-06550: line 5, column 41: 
+PLS-00357: Table,View Or Sequence reference 'OBJECT' not allowed in this context 
+ORA-06550: line 5, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL> @table 'object'
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+  8  /
+old   5:     EXECUTE IMMEDIATE print_table USING &1;
+new   5:     EXECUTE IMMEDIATE print_table USING object;
+    EXECUTE IMMEDIATE print_table USING object;
+                                        *
+ERROR at line 5:
+ORA-06550: line 5, column 41: 
+PLS-00357: Table,View Or Sequence reference 'OBJECT' not allowed in this context 
+ORA-06550: line 5, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+  7  ;
+  8  
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+  7  /
+old   4:     EXECUTE IMMEDIATE 'SELECT * FROM ?' USING '&1';
+new   4:     EXECUTE IMMEDIATE 'SELECT * FROM ?' USING 'object';
+DECLARE
+*
+ERROR at line 1:
+ORA-00911: invalid character 
+ORA-06512: at line 4 
+
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ?' USING '&1';
+new   4:     print_table := 'SELECT * FROM ?' USING 'object';
+    print_table := 'SELECT * FROM ?' USING 'object';
+                                     *
+ERROR at line 4:
+ORA-06550: line 4, column 38: 
+PLS-00103: Encountered the symbol "USING" when expecting one of the following: 
+* & = - + ; < / > at in is mod remainder not rem 
+<an exponent (**)> <> or != or ~= >= <= <> and or like like2 
+like4 likec between || multiset member submultiset 
+The symbol "* was inserted before "USING" to continue. 
+
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := CONCAT('SELECT * FROM ?', '&1');
+new   4:     print_table := CONCAT('SELECT * FROM ?', 'object');
+DECLARE
+*
+ERROR at line 1:
+ORA-00911: invalid character 
+ORA-06512: at line 5 
+
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+    SET TERMOUT ON;
+        *
+ERROR at line 6:
+ORA-06550: line 6, column 9: 
+PL/SQL: ORA-00922: missing or invalid option 
+ORA-06550: line 6, column 5: 
+PL/SQL: SQL Statement ignored 
+
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+    SET TERMOUT ON;
+        *
+ERROR at line 6:
+ORA-06550: line 6, column 9: 
+PL/SQL: ORA-00922: missing or invalid option 
+ORA-06550: line 6, column 5: 
+PL/SQL: SQL Statement ignored 
+
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+    SET TERMOUT ON;
+        *
+ERROR at line 6:
+ORA-06550: line 6, column 9: 
+PL/SQL: ORA-00922: missing or invalid option 
+ORA-06550: line 6, column 5: 
+PL/SQL: SQL Statement ignored 
+
+
+SQL> 
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+    SET TERMOUT ON;
+        *
+ERROR at line 6:
+ORA-06550: line 6, column 9: 
+PL/SQL: ORA-00922: missing or invalid option 
+ORA-06550: line 6, column 5: 
+PL/SQL: SQL Statement ignored 
+
+
+SQL> s
+SP2-0042: unknown command "s" - rest of line ignored.
+SQL> s
+SP2-0042: unknown command "s" - rest of line ignored.
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+    SET TERMOUT ON;
+        *
+ERROR at line 6:
+ORA-06550: line 6, column 9: 
+PL/SQL: ORA-00922: missing or invalid option 
+ORA-06550: line 6, column 5: 
+PL/SQL: SQL Statement ignored 
+
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+    SET TERMOUT ON;
+        *
+ERROR at line 6:
+ORA-06550: line 6, column 9: 
+PL/SQL: ORA-00922: missing or invalid option 
+ORA-06550: line 6, column 5: 
+PL/SQL: SQL Statement ignored 
+
+
+SQL> a
+SP2-0004: Nothing to append.
+SQL> ;
+  1  DECLARE
+  2      print_table VARCHAR(50);
+  3  BEGIN
+  4      print_table := 'SELECT * FROM ' || '&1';
+  5      dbms_output.Put_line(print_table);
+  6      SET TERMOUT ON;
+  7  --     EXECUTE IMMEDIATE print_table;
+  8* END;
+SQL> 
+SQL> @table object;
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+    SET TERMOUT ON;
+        *
+ERROR at line 6:
+ORA-06550: line 6, column 9: 
+PL/SQL: ORA-00922: missing or invalid option 
+ORA-06550: line 6, column 5: 
+PL/SQL: SQL Statement ignored 
+
+
+SQL> /
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+    SET TERMOUT ON;
+        *
+ERROR at line 6:
+ORA-06550: line 6, column 9: 
+PL/SQL: ORA-00922: missing or invalid option 
+ORA-06550: line 6, column 5: 
+PL/SQL: SQL Statement ignored 
+
+
+SQL> @table object;
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object;
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> 
+SQL> @table object;
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+    SET TERMOUT ON;
+        *
+ERROR at line 5:
+ORA-06550: line 5, column 9: 
+PL/SQL: ORA-00922: missing or invalid option 
+ORA-06550: line 5, column 5: 
+PL/SQL: SQL Statement ignored 
+ORA-06550: line 8, column 3: 
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the following: 
+; <an identifier> <a double-quoted delimited-identifier> 
+The symbol ";" was substituted for "end-of-file" to continue. 
+
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> x
+SP2-0042: unknown command "x" - rest of line ignored.
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from object
+  2  ;
+
+no rows selected
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+    SET TERMOUT OFF;
+        *
+ERROR at line 5:
+ORA-06550: line 5, column 9: 
+PL/SQL: ORA-00922: missing or invalid option 
+ORA-06550: line 5, column 5: 
+PL/SQL: SQL Statement ignored 
+ORA-06550: line 7, column 9: 
+PL/SQL: ORA-00922: missing or invalid option 
+ORA-06550: line 7, column 5: 
+PL/SQL: SQL Statement ignored 
+
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+DECLARE
+*
+ERROR at line 1:
+ORA-00922: missing or invalid option 
+ORA-06512: at line 5 
+
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   4:     print_table := 'SELECT * FROM ' || '&1';
+new   4:     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || '&1';;
+new   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || 'object';;
+old   4: --     print_table := 'SELECT * FROM ' || '&1';
+new   4: --     print_table := 'SELECT * FROM ' || 'object';
+    print_table VARCHAR2(200) := 'SELECT * FROM ' || 'object';;
+                                                              *
+ERROR at line 2:
+ORA-06550: line 2, column 63: 
+PLS-00103: Encountered the symbol ";" when expecting one of the following: 
+begin function pragma procedure subtype type <an identifier> 
+<a double-quoted delimited-identifier> current cursor delete 
+exists prior 
+
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || '&1';
+new   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || 'object';
+old   4: --     print_table := 'SELECT * FROM ' || '&1';
+new   4: --     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || '&1';
+new   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || 'object';
+old   4: --     print_table := 'SELECT * FROM ' || '&1';
+new   4: --     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || '&1';
+new   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || 'object';
+old   4: --     print_table := 'SELECT * FROM ' || '&1';
+new   4: --     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || '&1';
+new   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || 'object';
+old   4: --     print_table := 'SELECT * FROM ' || '&1';
+new   4: --     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || '&1';
+new   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || 'object';
+old   4: --     print_table := 'SELECT * FROM ' || '&1';
+new   4: --     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || '&1';
+new   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || 'object';
+old   4: --     print_table := 'SELECT * FROM ' || '&1';
+new   4: --     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> @table
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+old   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || '&1';
+new   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || 'object';
+old   4: --     print_table := 'SELECT * FROM ' || '&1';
+new   4: --     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> 
+SQL> @table
+Enter value for 1: object
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(40 CHAR)
+ TYPE                                                                                             NOT NULL VARCHAR2(8)
+ DEFAULT_ACCESS                                                                                   NOT NULL VARCHAR2(8)
+
+Enter value for 1: object
+old   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || '&1';
+new   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || 'object';
+Enter value for 1: object
+old   4: --     print_table := 'SELECT * FROM ' || '&1';
+new   4: --     print_table := 'SELECT * FROM ' || 'object';
+SELECT * FROM object                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> object
+SP2-0042: unknown command "object" - rest of line ignored.
+SQL> @table
+Enter value for 1: object
+old   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || '&1';
+new   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || 'object';
+Enter value for 1: object
+old   4:     DESC &1;
+new   4:     DESC object;
+Enter value for 1: object
+old   5: --     print_table := 'SELECT * FROM ' || '&1';
+new   5: --     print_table := 'SELECT * FROM ' || 'object';
+    DESC object;
+    *
+ERROR at line 4:
+ORA-06550: line 4, column 5: 
+PLS-00103: Encountered the symbol "DESC" when expecting one of the following: 
+( begin case declare exit for goto if loop mod null pragma 
+raise return select update while with <an identifier> 
+<a double-quoted delimited-identifier> <a bind variable> << 
+continue close current delete fetch lock insert open rollback 
+savepoint set sql execute commit forall merge pipe purge 
+
+
+SQL> @table object
+old   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || '&1';
+new   2:     print_table VARCHAR2(200) := 'SELECT * FROM ' || 'object';
+old   4:     EXECUTE IMMEDIATE 'DESC &1';
+new   4:     EXECUTE IMMEDIATE 'DESC object';
+old   5: --     print_table := 'SELECT * FROM ' || '&1';
+new   5: --     print_table := 'SELECT * FROM ' || 'object';
+DECLARE
+*
+ERROR at line 1:
+ORA-00900: invalid SQL statement 
+ORA-06512: at line 4 
+
+
+SQL> @table object
+old   2:     name VARCHAR2(50) := &1;
+new   2:     name VARCHAR2(50) := object;
+    name VARCHAR2(50) := object;
+                         *
+ERROR at line 2:
+ORA-06550: line 2, column 26: 
+PLS-00357: Table,View Or Sequence reference 'OBJECT' not allowed in this context 
+ORA-06550: line 2, column 10: 
+PL/SQL: Item ignored 
+
+
+SQL> @table object
+old   2:     name VARCHAR2(50) := '&1';
+new   2:     name VARCHAR2(50) := 'object';
+DECLARE
+*
+ERROR at line 1:
+ORA-00900: invalid SQL statement 
+ORA-06512: at line 5 
+
+
+SQL> @table object
+old   2:     name VARCHAR2(50) := '&1';
+new   2:     name VARCHAR2(50) := 'object';
+SELECT * FROM :name                                                                                                                                                         
+
+PL/SQL procedure successfully completed.
+
+SQL> @tables
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+calendar                                                                                                                                                                    
+event                                                                                                                                                                       
+group                                                                                                                                                                       
+tag                                                                                                                                                                         
+
+SQL> @tables
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ NAME                                                                                             NOT NULL VARCHAR2(8 CHAR)
+
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+calendar                                                                                                                                                                    
+event                                                                                                                                                                       
+group                                                                                                                                                                       
+tag                                                                                                                                                                         
+
+SQL> @tables
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+calendar                                                                                                                                                                    
+event                                                                                                                                                                       
+group                                                                                                                                                                       
+tag                                                                                                                                                                         
+
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+full                                                                                                                                                                        
+write                                                                                                                                                                       
+read                                                                                                                                                                        
+denied                                                                                                                                                                      
+
+
+no rows selected
+
+
+no rows selected
+
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+group                                                                                                                                                                       
+user                                                                                                                                                                        
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+SQL> @tables
+SP2-0734: unknown command beginning "dbms_outpu..." - rest of line ignored.
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+calendar                                                                                                                                                                    
+event                                                                                                                                                                       
+group                                                                                                                                                                       
+tag                                                                                                                                                                         
+
+SP2-0734: unknown command beginning "dbms_outpu..." - rest of line ignored.
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+full                                                                                                                                                                        
+write                                                                                                                                                                       
+read                                                                                                                                                                        
+denied                                                                                                                                                                      
+
+
+no rows selected
+
+
+no rows selected
+
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+group                                                                                                                                                                       
+user                                                                                                                                                                        
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+SQL> @table object
+old   2:     name VARCHAR2(50) := '&1';
+new   2:     name VARCHAR2(50) := 'object';
+SELECT * FROM :name;                                                                                                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+old   2:     name VARCHAR2(50) := '&1';
+new   2:     name VARCHAR2(50) := 'object';
+SELECT * FROM object;                                                                                                                                                       
+
+PL/SQL procedure successfully completed.
+
+SQL> @table object
+old   2:     name VARCHAR2(50) := '&1';
+new   2:     name VARCHAR2(50) := 'object';
+SELECT * FROM object;                                                                                                                                                       
+DECLARE
+*
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+ORA-06512: at line 10 
+
+
+SQL> @table object
+old   2:     name VARCHAR2(50) := '&1';
+new   2:     name VARCHAR2(50) := 'object';
+END;
+*
+ERROR at line 12:
+ORA-06550: line 12, column 1: 
+PLS-00103: Encountered the symbol "END" when expecting one of the following: 
+. ( * @ % & = - + ; < / > at in is mod remainder not rem 
+return returning <an exponent (**)> <> or != or ~= >= <= <> 
+and or like like2 like4 likec between into using || multiset 
+bulk member submultiset 
+The symbol ";" was substituted for "END" to continue. 
+
+
+SQL> @table object
+old   2:     name VARCHAR2(50) := '&1';
+new   2:     name VARCHAR2(50) := 'object';
+SELECT * FROM object;                                                                                                                                                       
+DECLARE
+*
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+ORA-06512: at line 11 
+
+
+SQL> @table object
+old   2:     name VARCHAR2(50) := '&1';
+new   2:     name VARCHAR2(50) := 'object';
+SELECT * FROM object;                                                                                                                                                       
+DECLARE
+*
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+ORA-06512: at line 11 
+
+
+SQL> @table object
+old   2:     name VARCHAR2(50) := '&1';
+new   2:     name VARCHAR2(50) := 'object';
+SELECT * FROM object;                                                                                                                                                       
+DECLARE
+*
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+ORA-06512: at line 11 
+
+
+SQL> @tables
+SELECT * FROM object_type
+*
+ERROR at line 2:
+ORA-00923: FROM keyword not found where expected 
+
+
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+full                                                                                                                                                                        
+write                                                                                                                                                                       
+read                                                                                                                                                                        
+denied                                                                                                                                                                      
+
+
+no rows selected
+
+
+no rows selected
+
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+group                                                                                                                                                                       
+user                                                                                                                                                                        
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+SQL> @tables
+
+'OBJECT_TYPE:N                                                                                                                                                              
+--------------                                                                                                                                                              
+object_type:n;                                                                                                                                                              
+
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+calendar                                                                                                                                                                    
+event                                                                                                                                                                       
+group                                                                                                                                                                       
+tag                                                                                                                                                                         
+
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+full                                                                                                                                                                        
+write                                                                                                                                                                       
+read                                                                                                                                                                        
+denied                                                                                                                                                                      
+
+
+no rows selected
+
+
+no rows selected
+
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+group                                                                                                                                                                       
+user                                                                                                                                                                        
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+SQL> @tables
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ NAME                                                                                             NOT NULL VARCHAR2(8 CHAR)
+
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+calendar                                                                                                                                                                    
+event                                                                                                                                                                       
+group                                                                                                                                                                       
+tag                                                                                                                                                                         
+
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+full                                                                                                                                                                        
+write                                                                                                                                                                       
+read                                                                                                                                                                        
+denied                                                                                                                                                                      
+
+
+no rows selected
+
+
+no rows selected
+
+
+NAME                                                                                                                                                                        
+--------                                                                                                                                                                    
+group                                                                                                                                                                       
+user                                                                                                                                                                        
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+
+no rows selected
+
+SQL> exit

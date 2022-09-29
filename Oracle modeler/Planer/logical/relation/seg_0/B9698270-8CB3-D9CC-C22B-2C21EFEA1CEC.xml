@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tagging" directorySegmentName="seg_0" id="B9698270-8CB3-D9CC-C22B-2C21EFEA1CEC">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 15:30:14 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>marks</nameOnSource>
+<nameOnTarget>is marked by tag</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>7B6878D8-E20B-91F1-3738-19B9ADE64CA8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6DA843FC-A0AE-4F37-8379-406071932075</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

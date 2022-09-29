@@ -1,0 +1,15 @@
+{
+    "name": "vendor/planner",
+    "description": "Description of project Planner.",
+    "authors": [
+        {
+            "name": "Krzysztof Piesiewicz",
+            "email": "kp385996@students.mimuw.edu.pl"
+        }
+    ],
+    "require": {
+        "eloquent/enumeration": "dev-master"
+    },
+    "require-dev": {
+    }
+}

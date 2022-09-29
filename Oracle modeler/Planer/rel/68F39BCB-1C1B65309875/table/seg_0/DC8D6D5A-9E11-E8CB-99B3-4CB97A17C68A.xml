@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC8D6D5A-9E11-E8CB-99B3-4CB97A17C68A" name="Tagging">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Tag_Id" id="694CEB8A-F7AD-68D2-B344-AC86EC95FB28">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8804A71-24CC-FBA3-E896-294BF4D00B09" referredColumn="C35FD46B-FF97-0FE7-6113-5CFE7BB6E6F4"/>
+</associations>
+</Column>
+<Column name="Tagged_Id" id="8D3CA7AB-F427-B405-AB3F-FB755EB159FB">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E197DB6-2AEC-A442-B28D-EFAFEE6AE000" referredColumn="66254F3C-4435-52E9-A346-5834201F73E1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7954B6A8-887F-EE5A-99EA-569EAC78D232" name="Tagging_PK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="694CEB8A-F7AD-68D2-B344-AC86EC95FB28"/>
+<colUsage columnID="8D3CA7AB-F427-B405-AB3F-FB755EB159FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0BAFF381-04A2-2F70-158A-1A154C358B92" name="Tagging_Tag_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>B9698270-8CB3-D9CC-C22B-2C21EFEA1CEC</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="694CEB8A-F7AD-68D2-B344-AC86EC95FB28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24A2FD25-0145-732C-936C-8CC715242FAF" name="Tagging_Tagged_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>B9698270-8CB3-D9CC-C22B-2C21EFEA1CEC</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D3CA7AB-F427-B405-AB3F-FB755EB159FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

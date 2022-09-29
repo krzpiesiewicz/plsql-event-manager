@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="770DE2BF-59D2-FB6E-A255-DEA8BEA7B0A9" name="Group_of_users">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:35 UTC</createdTime>
+<generatorID>D3248B49-4DF2-984E-DF62-3661C44716BE</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="663CC642-39EC-1D3A-F4F4-C284B3B75F36">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:35 UTC</createdTime>
+<generatorID>ED96BED7-7884-8BD2-E969-2AD7FC92D0CF</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BD7439AC-2D71-CA60-BE6F-F66547DA25F9" referredColumn="66254F3C-4435-52E9-A346-5834201F73E1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BDA04AA5-35E0-8105-27D1-5243F8942610" name="Group_of_users_PK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:35 UTC</createdTime>
+<generatorID>25F82F60-0B57-CEF8-A643-751013BF73FC</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="663CC642-39EC-1D3A-F4F4-C284B3B75F36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB404D49-6810-A03C-17E6-E850E2AD710B" name="Group_of_users_Tagged_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:35 UTC</createdTime>
+<generatorID>8B723FE4-435B-F85C-6814-09B62C41C7F3</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="663CC642-39EC-1D3A-F4F4-C284B3B75F36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B432433-31E0-1925-4E2E-77310E112D57" name="Group_of_users_User_entity_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:50:47 UTC</createdTime>
+<generatorID>AD717F06-3024-77AB-D378-2C99C2AE1E2E</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

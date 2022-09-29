@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DD0F1658-E7AA-3F1B-5B83-C9C17C70DFDF" name="User_in_group">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:36 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="User_Id" id="95911312-E15C-8ECA-1340-7A2FD30710F9">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:36 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5990491F-5536-6574-CCCB-7E4AAA89302C" referredColumn="9693A746-06F6-6AD9-7183-FF18F4379655"/>
+</associations>
+</Column>
+<Column name="Group_Id" id="F64B71EE-B845-C40A-D7CD-3B987DAE49EC">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:36 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8750AB92-C34C-E22E-C942-BDE8757B12E9" referredColumn="663CC642-39EC-1D3A-F4F4-C284B3B75F36"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6B93A84-CF8F-2628-1FB8-02B099EEAC9C" name="User-group_PK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:36 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95911312-E15C-8ECA-1340-7A2FD30710F9"/>
+<colUsage columnID="F64B71EE-B845-C40A-D7CD-3B987DAE49EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74212C0D-A39D-CFF0-91DB-2876AD4C67D2" name="User-group_User_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:36 UTC</createdTime>
+<generatorID>BC8A54BB-E752-A77D-A7E0-357DA215756F</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95911312-E15C-8ECA-1340-7A2FD30710F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8BEEB70F-39E8-CB22-D1E6-CA9B0FBD0A43" name="User-group_Group_of_users_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:36 UTC</createdTime>
+<generatorID>BC8A54BB-E752-A77D-A7E0-357DA215756F</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F64B71EE-B845-C40A-D7CD-3B987DAE49EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

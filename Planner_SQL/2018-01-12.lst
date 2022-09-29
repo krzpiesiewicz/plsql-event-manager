@@ -1,0 +1,1411 @@
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+SQL> @create_tables_and_indexes
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Index created.
+
+
+Index created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+)
+*
+ERROR at line 7:
+ORA-00904: : invalid identifier 
+
+
+    user_account (surname ASC)
+    *
+ERROR at line 2:
+ORA-00942: table or view does not exist 
+
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Commit complete.
+
+SQL> @drop_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+DROP TABLE user_account CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+SQL> @create_tables_and_indexes
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Index created.
+
+
+Index created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Commit complete.
+
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Function created.
+
+SQL> drop PROCEDURE add_user
+  2  ;
+
+Procedure dropped.
+
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Function created.
+
+SQL> @table user_acount
+ERROR:
+ORA-04043: object user_acount does not exist 
+
+
+old   2:   FROM &1
+new   2:   FROM user_acount
+  FROM user_acount
+       *
+ERROR at line 2:
+ORA-00942: table or view does not exist 
+
+
+SQL> @table user_account
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ EMAIL                                                                                            NOT NULL VARCHAR2(50 CHAR)
+ NAME                                                                                             NOT NULL VARCHAR2(30 CHAR)
+ SURNAME                                                                                          NOT NULL VARCHAR2(60 CHAR)
+ PASS_HASH                                                                                        NOT NULL VARCHAR2(60 CHAR)
+
+old   2:   FROM &1
+new   2:   FROM user_account
+
+        ID EMAIL                                              NAME                           SURNAME                                                                        
+---------- -------------------------------------------------- ------------------------------ ------------------------------------------------------------                   
+PASS_HASH                                                                                                                                                                   
+------------------------------------------------------------                                                                                                                
+         9 Krzysztof                                          Piesiewicz                     kp385996@gmail.com                                                             
+0105908c122dbbe5966e07993f720e5cec6e0cff                                                                                                                                    
+                                                                                                                                                                            
+
+SQL> drop procedure try_log_user;
+drop procedure try_log_user
+*
+ERROR at line 1:
+ORA-04043: object TRY_LOG_USER does not exist 
+
+
+SQL> drop procedure try_log;
+drop procedure try_log
+*
+ERROR at line 1:
+ORA-04043: object TRY_LOG does not exist 
+
+
+SQL> drop functio try_log;
+drop functio try_log
+     *
+ERROR at line 1:
+ORA-00950: invalid DROP option 
+
+
+SQL> drop function try_log;
+
+Function dropped.
+
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Function created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+SQL> @tmp_code
+    dmbs.output_line(id);
+    *
+ERROR at line 5:
+ORA-06550: line 5, column 5: 
+PLS-00201: identifier 'DMBS.OUTPUT_LINE' must be declared 
+ORA-06550: line 5, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL> @tmp_code
+    dmbs_output.put_line(id);
+    *
+ERROR at line 5:
+ORA-06550: line 5, column 5: 
+PLS-00201: identifier 'DMBS_OUTPUT.PUT_LINE' must be declared 
+ORA-06550: line 5, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL> @tmp_code
+DECLARE
+*
+ERROR at line 1:
+ORA-20000: Wrong email 
+ORA-06512: at "KP385996.LOG_USER", line 8 
+ORA-06512: at line 4 
+
+
+SQL> @tmp_code
+    select * from user_account;
+    *
+ERROR at line 4:
+ORA-06550: line 4, column 5: 
+PLS-00428: an INTO clause is expected in this SELECT statement 
+
+
+SQL> @tmp_code
+DECLARE
+*
+ERROR at line 1:
+ORA-20000: Wrong email 
+ORA-06512: at "KP385996.LOG_USER", line 8 
+ORA-06512: at line 6 
+
+
+SQL> @tmp_code
+    dbms_output.put_line(row);
+    *
+ERROR at line 6:
+ORA-06550: line 6, column 5: 
+PLS-00306: wrong number or types of arguments in call to 'PUT_LINE' 
+ORA-06550: line 6, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL> @tmp_code
+    dbms_output.put_line(row);
+    *
+ERROR at line 6:
+ORA-06550: line 6, column 5: 
+PLS-00306: wrong number or types of arguments in call to 'PUT_LINE' 
+ORA-06550: line 6, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL> @tmp_code
+Krzysztof                                                                                                                                                                   
+DECLARE
+*
+ERROR at line 1:
+ORA-20000: Wrong email 
+ORA-06512: at "KP385996.LOG_USER", line 8 
+ORA-06512: at line 8 
+
+
+SQL> @tmp_code
+Krzysztof                                                                                                                                                                   
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from user_account
+  2  ;
+
+        ID EMAIL                                              NAME                           SURNAME                                                                        
+---------- -------------------------------------------------- ------------------------------ ------------------------------------------------------------                   
+PASS_HASH                                                                                                                                                                   
+------------------------------------------------------------                                                                                                                
+         9 Krzysztof                                          Piesiewicz                     kp385996@gmail.com                                                             
+0105908c122dbbe5966e07993f720e5cec6e0cff                                                                                                                                    
+                                                                                                                                                                            
+
+SQL> @drop_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+SQL> @create_tables_and_indexes
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Index created.
+
+
+Index created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Commit complete.
+
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Function created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+SQL> @table user_account
+ Name                                                                                             Null?    Type
+ ------------------------------------------------------------------------------------------------ -------- -----------------------------------------------------------------
+ ID                                                                                               NOT NULL NUMBER(38)
+ NAME                                                                                             NOT NULL VARCHAR2(30 CHAR)
+ SURNAME                                                                                          NOT NULL VARCHAR2(60 CHAR)
+ EMAIL                                                                                            NOT NULL VARCHAR2(50 CHAR)
+ PASS_HASH                                                                                        NOT NULL VARCHAR2(60 CHAR)
+
+old   2:   FROM &1
+new   2:   FROM user_account
+
+no rows selected
+
+SQL> add_user('K', 'P', 'kp385996@gmail.com', '0105908c122dbbe5966e07993f720e5cec6e0cff');
+SP2-0734: unknown command beginning "add_user('..." - rest of line ignored.
+SQL> begin add_user('K', 'P', 'kp385996@gmail.com', '0105908c122dbbe5966e07993f720e5cec6e0cff'); end;
+  2  /
+begin add_user('K', 'P', 'kp385996@gmail.com', '0105908c122dbbe5966e07993f720e5cec6e0cff'); end;
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7: 
+PLS-00221: 'ADD_USER' is not a procedure or is undefined 
+ORA-06550: line 1, column 7: 
+PL/SQL: Statement ignored 
+
+
+SQL> begin return add_user('K', 'P', 'kp385996@gmail.com', '0105908c122dbbe5966e07993f720e5cec6e0cff'); end;
+  2  /
+begin return add_user('K', 'P', 'kp385996@gmail.com', '0105908c122dbbe5966e07993f720e5cec6e0cff'); end;
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7: 
+PLS-00372: In a procedure, RETURN statement cannot contain an expression 
+ORA-06550: line 1, column 7: 
+PL/SQL: Statement ignored 
+
+
+SQL> @tmp_code
+kp385996@gmail.com                                                                                                                                                          
+11                                                                                                                                                                          
+
+PL/SQL procedure successfully completed.
+
+SQL> @tmp_code
+kp385996@gmail.com                                                                                                                                                          
+DECLARE
+*
+ERROR at line 1:
+ORA-06503: PL/SQL: Function returned without value 
+ORA-06512: at "KP385996.LOG_USER", line 13 
+ORA-06512: at line 10 
+
+
+SQL> @tmp_code
+kp385996@gmail.com                                                                                                                                                          
+
+PL/SQL procedure successfully completed.
+
+SQL> @tmp_code
+kp385996@gmail.com                                                                                                                                                          
+DECLARE
+*
+ERROR at line 1:
+ORA-06503: PL/SQL: Function returned without value 
+ORA-06512: at "KP385996.LOG_USER", line 13 
+ORA-06512: at line 10 
+
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+DECLARE
+*
+ERROR at line 1:
+ORA-06503: PL/SQL: Function returned without value 
+ORA-06512: at "KP385996.LOG_USER", line 13 
+ORA-06512: at line 10 
+
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+DECLARE
+*
+ERROR at line 1:
+ORA-06503: PL/SQL: Function returned without value 
+ORA-06512: at "KP385996.LOG_USER", line 13 
+ORA-06512: at line 10 
+
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+DECLARE
+*
+ERROR at line 1:
+ORA-06503: PL/SQL: Function returned without value 
+ORA-06512: at "KP385996.LOG_USER", line 13 
+ORA-06512: at line 10 
+
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+DECLARE
+*
+ERROR at line 1:
+ORA-06503: PL/SQL: Function returned without value 
+ORA-06512: at "KP385996.LOG_USER", line 13 
+ORA-06512: at line 10 
+
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+
+PL/SQL procedure successfully completed.
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+0                                                                                                                                                                           
+
+PL/SQL procedure successfully completed.
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+11                                                                                                                                                                          
+
+PL/SQL procedure successfully completed.
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+DECLARE
+*
+ERROR at line 1:
+ORA-06503: PL/SQL: Function returned without value 
+ORA-06512: at "KP385996.LOG_USER", line 13 
+ORA-06512: at line 10 
+
+
+SQL> @tmp_code
+
+Warning: Function created with compilation errors.
+
+    id := log_user('kp385996@gmail.com', '0105908c122dbbe5966e07993f720e5cec6e0cff');
+          *
+ERROR at line 10:
+ORA-06550: line 10, column 11: 
+PLS-00905: object KP385996.LOG_USER is invalid 
+ORA-06550: line 10, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL> @tmp_code
+
+Warning: Function created with compilation errors.
+
+    id := log_user('kp385996@gmail.com', '0105908c122dbbe5966e07993f720e5cec6e0cff');
+          *
+ERROR at line 10:
+ORA-06550: line 10, column 11: 
+PLS-00905: object KP385996.LOG_USER is invalid 
+ORA-06550: line 10, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+11                                                                                                                                                                          
+
+PL/SQL procedure successfully completed.
+
+SQL> @tmp_code
+
+Warning: Function created with compilation errors.
+
+    id := log_user('kp385996@gmail.com', '0105908c122dbbe5966e07993f720e5cec6e0cff');
+          *
+ERROR at line 10:
+ORA-06550: line 10, column 11: 
+PLS-00905: object KP385996.LOG_USER is invalid 
+ORA-06550: line 10, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+11                                                                                                                                                                          
+
+PL/SQL procedure successfully completed.
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+11                                                                                                                                                                          
+
+PL/SQL procedure successfully completed.
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+DECLARE
+*
+ERROR at line 1:
+ORA-20001: Wrong password 
+ORA-06512: at "KP385996.LOG_USER", line 12 
+ORA-06512: at line 10 
+
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+DECLARE
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at "KP385996.LOG_USER", line 7 
+ORA-06512: at line 10 
+
+
+SQL> @tmp_code
+
+Warning: Function created with compilation errors.
+
+    id := log_user('kp385996@gmail.coma', '0105908c122dbbe5966e07993f720e5cec6e0cff');
+          *
+ERROR at line 10:
+ORA-06550: line 10, column 11: 
+PLS-00905: object KP385996.LOG_USER is invalid 
+ORA-06550: line 10, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL> @tmp_code
+
+Warning: Function created with compilation errors.
+
+    id := log_user('kp385996@gmail.coma', '0105908c122dbbe5966e07993f720e5cec6e0cff');
+          *
+ERROR at line 10:
+ORA-06550: line 10, column 11: 
+PLS-00905: object KP385996.LOG_USER is invalid 
+ORA-06550: line 10, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL> @tmp_code
+
+Warning: Function created with compilation errors.
+
+    id := log_user('kp385996@gmail.coma', '0105908c122dbbe5966e07993f720e5cec6e0cff');
+          *
+ERROR at line 10:
+ORA-06550: line 10, column 11: 
+PLS-00905: object KP385996.LOG_USER is invalid 
+ORA-06550: line 10, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL> @tmp_code
+
+Warning: Function created with compilation errors.
+
+    id := log_user('kp385996@gmail.coma', '0105908c122dbbe5966e07993f720e5cec6e0cff');
+          *
+ERROR at line 10:
+ORA-06550: line 10, column 11: 
+PLS-00905: object KP385996.LOG_USER is invalid 
+ORA-06550: line 10, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL> show err
+Errors for FUNCTION LOG_USER:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+12/34    PLS-00103: Encountered the symbol "RAISE_APPLICATION_ERROR" when                                                                                                   
+         expecting one of the following:                                                                                                                                    
+         . then or                                                                                                                                                          
+         The symbol "then" was substituted for "RAISE_APPLICATION_ERROR"                                                                                                    
+         to continue.                                                                                                                                                       
+                                                                                                                                                                            
+SQL> show err
+Errors for FUNCTION LOG_USER:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+12/34    PLS-00103: Encountered the symbol "RAISE_APPLICATION_ERROR" when                                                                                                   
+         expecting one of the following:                                                                                                                                    
+         . then or                                                                                                                                                          
+         The symbol "then" was substituted for "RAISE_APPLICATION_ERROR"                                                                                                    
+         to continue.                                                                                                                                                       
+                                                                                                                                                                            
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+DECLARE
+*
+ERROR at line 1:
+ORA-20000: Wrong email 
+ORA-06512: at "KP385996.LOG_USER", line 12 
+ORA-06512: at line 10 
+
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+DECLARE
+*
+ERROR at line 1:
+ORA-20000: Wrong email 
+ORA-06512: at "KP385996.LOG_USER", line 10 
+ORA-06512: at line 10 
+
+
+SQL> @drop_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+SQL> @create_tables_and_indexes
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Index created.
+
+
+Index created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Commit complete.
+
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Function created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+SQL> @drop_tables
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+SQL> @create_tables_and_indexes
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Index created.
+
+
+Index created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Commit complete.
+
+SQL> @triggers_procedures
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Function created.
+
+
+Procedure created.
+
+
+Function created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Procedure created.
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+DECLARE
+*
+ERROR at line 1:
+ORA-20000: Wrong email 
+ORA-06512: at "KP385996.LOG_USER", line 10 
+ORA-06512: at line 10 
+
+
+SQL> @tmp_code
+
+Function created.
+
+kp385996@gmail.com                                                                                                                                                          
+17                                                                                                                                                                          
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from user_account
+  2  ;
+
+        ID NAME                           SURNAME                                                      EMAIL                                                                
+---------- ------------------------------ ------------------------------------------------------------ ------------------------------------------------------------         
+PASS_HASH                                                                                                                                                                   
+----------------------------------------------------------------------------------------------------                                                                        
+        17 K                              P                                                            kp385996@gmail.com                                                   
+0105908c122dbbe5966e07993f720e5cec6e0cff                                                                                                                                    
+                                                                                                                                                                            
+
+SQL> @tmp_code
+
+Function created.
+
+DECLARE
+*
+ERROR at line 1:
+ORA-00001: unique constraint (KP385996.SYS_C00761655) violated 
+ORA-06512: at "KP385996.ADD_USER", line 11 
+ORA-06512: at line 5 
+
+
+SQL> @tmp_code
+
+Warning: Function created with compilation errors.
+
+    id := log_user('kp385996@gmail.com', '0105908c122dbbe5966e07993f720e5cec6e0cff');
+          *
+ERROR at line 10:
+ORA-06550: line 10, column 11: 
+PLS-00905: object KP385996.LOG_USER is invalid 
+ORA-06550: line 10, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL> show err
+Errors for FUNCTION LOG_USER:
+
+LINE/COL ERROR                                                                                                                                                              
+-------- -----------------------------------------------------------------                                                                                                  
+18/1     PLS-00103: Encountered the symbol "EXCEPTION"                                                                                                                      
+19/1     PLS-00103: Encountered the symbol "EXCEPTION" when expecting one                                                                                                   
+         of the following:                                                                                                                                               

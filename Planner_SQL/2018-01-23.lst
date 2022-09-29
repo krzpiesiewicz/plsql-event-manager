@@ -1,0 +1,71 @@
+
+SQL> @tmp_code
+SELECT event.ID AS ID, object.NAME AS NAME, TO_CHAR(event.BEGIN_DATE, 'DD.MM.YYYY, HH24:MI:SS') AS BEGIN_DATE, TO_CHAR(event.END_DATE, 'DD.MM.YYYY, HH24:MI:SS') AS END_DATE, object.DEFAULT_ACCESS AS DEFAULT_ACCESS FROM event INNER JOIN (SELECT ID AS obj_id, NAME, DEFAULT_ACCESS FROM object WHERE type = 'event' AND UPPER(NAME) LIKE UPPER('%Impreza%')) ON event.ID = object.ID WHERE DEFAULT_ACCESS != 'denied' OR EXISTS (SELECT 1 FROM entity_access WHERE object_id = obj_id AND entity_id = 17)
+                                                                                                                                                                                                                                                                                                                                                                               *
+ERROR at line 1:
+ORA-00904: "OBJECT"."ID": invalid identifier 
+
+
+SQL> @tmp_code
+SELECT event.ID AS ID, object.NAME AS NAME, TO_CHAR(event.BEGIN_DATE, 'DD.MM.YYYY, HH24:MI:SS') AS BEGIN_DATE, TO_CHAR(event.END_DATE, 'DD.MM.YYYY, HH24:MI:SS') AS END_DATE, object.DEFAULT_ACCESS AS DEFAULT_ACCESS FROM event INNER JOIN (SELECT ID, NAME, DEFAULT_ACCESS FROM object WHERE type = 'event' AND UPPER(NAME) LIKE UPPER('%Impreza%')) ON event.ID = object.ID WHERE DEFAULT_ACCESS != 'denied' OR EXISTS (SELECT 1 FROM entity_access WHERE object_id = obejct.id AND entity_id = 17)
+                                                                                                                                                                                                                                                                                                                                                                     *
+ERROR at line 1:
+ORA-00904: "OBJECT"."ID": invalid identifier 
+
+
+SQL> @tmp_code
+SELECT event.ID AS ID, object.NAME AS NAME, TO_CHAR(event.BEGIN_DATE, 'DD.MM.YYYY, HH24:MI:SS') AS BEGIN_DATE, TO_CHAR(event.END_DATE, 'DD.MM.YYYY, HH24:MI:SS') AS END_DATE, object.DEFAULT_ACCESS AS DEFAULT_ACCESS FROM event INNER JOIN (SELECT object.ID, NAME, DEFAULT_ACCESS FROM object WHERE type = 'event' AND UPPER(NAME) LIKE UPPER('%Impreza%')) ON event.ID = object.ID WHERE DEFAULT_ACCESS != 'denied' OR EXISTS (SELECT 1 FROM entity_access WHERE object_id = obejct.id AND entity_id = 17)
+                                                                                                                                                                                                                                                                                                                                                                            *
+ERROR at line 1:
+ORA-00904: "OBJECT"."ID": invalid identifier 
+
+
+SQL> @tmp_code
+  4  ;
+
+        ID NAME                                                                                                 DEFAULT_                                                    
+---------- ---------------------------------------------------------------------------------------------------- --------                                                    
+        24 Impreza po sesji                                                                                     read                                                        
+
+SQL> @tmp_code
+
+        ID NAME                                                                                                 BEGIN_DATE           END_DATE             DEFAULT_          
+---------- ---------------------------------------------------------------------------------------------------- -------------------- -------------------- --------          
+        24 Impreza po sesji                                                                                     10.02.2018, 20:32:29 11.02.2018, 10:32:41 read              
+
+SQL> @tmp_code
+
+        ID NAME                                                                                                 BEGIN_DATE           END_DATE             DEFAULT_          
+---------- ---------------------------------------------------------------------------------------------------- -------------------- -------------------- --------          
+        24 Impreza po sesji                                                                                     10.02.2018, 20:32:29 11.02.2018, 10:32:41 read              
+
+SQL> select * form user_account;
+select * form user_account
+         *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> select * from user_account;
+
+        ID NAME                           SURNAME                                                      EMAIL                                                                
+---------- ------------------------------ ------------------------------------------------------------ ------------------------------------------------------------         
+PASS_HASH                                                                                                                                                                   
+----------------------------------------------------------------------------------------------------                                                                        
+        41 Marian                         Nowak                                                        mn@hello.pl                                                          
+aa5f12400e707ab2599047160ae6786b3fa1dc75                                                                                                                                    
+                                                                                                                                                                            
+        42 Tomasz                         Madej                                                        tm385853@students.mimiw.edu.pl                                       
+1a51a167e3e1f6dae38cc3ed8873cc17730654f4                                                                                                                                    
+                                                                                                                                                                            
+        43 Radek                          Wasko                                                        programistagd@gmail.com                                              
+813a259da042d64528f1448b5b23ef380cabc736                                                                                                                                    
+                                                                                                                                                                            
+        17 K                              P                                                            kp385996@gmail.com                                                   
+0105908c122dbbe5966e07993f720e5cec6e0cff                                                                                                                                    
+                                                                                                                                                                            
+        23 Henryk                         Kowalski                                                     hello@op.pl                                                          
+90e807b84a9f69f938ea4cd01a317149775c3590                                                                                                                                    
+                                                                                                                                                                            
+
+SQL> exit

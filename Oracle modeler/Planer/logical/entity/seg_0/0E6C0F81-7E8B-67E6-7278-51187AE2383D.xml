@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0E6C0F81-7E8B-67E6-7278-51187AE2383D" name="Event in calendar">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 17:57:54 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>6DA843FC-A0AE-4F37-8379-406071932075</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="9058F6AC-1F9B-4325-4052-DD2ABB3BF990">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:29:04 UTC</createdTime>
+<generatorID>D739EC57-B106-BCD2-A6CB-DD65E46A86D3</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<referedAttribute>ED96BED7-7884-8BD2-E969-2AD7FC92D0CF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="904F9BE3-F0EA-D2F1-D80E-7D0645A56B7A">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:02:33 UTC</createdTime>
+<generatorID>4836E451-EB75-86EE-8327-5CF4E9DC5740</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<engineerTo>
+<item key="68F39BCB-C165-2794-9F0F-1C1B65309875" value="true"/>
+</engineerTo>
+<referedAttribute>ED96BED7-7884-8BD2-E969-2AD7FC92D0CF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="80F0DA91-3F6E-F566-E184-0B8C082D2529" name="Event_in_calendar">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:35 UTC</createdTime>
+<generatorID>0E6C0F81-7E8B-67E6-7278-51187AE2383D</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="6B05494D-F019-350A-D3F1-69F35F913944">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:35 UTC</createdTime>
+<generatorID>ED96BED7-7884-8BD2-E969-2AD7FC92D0CF</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAD8E023-5813-598D-7058-785A5430C887" referredColumn="66254F3C-4435-52E9-A346-5834201F73E1"/>
+</associations>
+</Column>
+<Column name="Calendar_Id" id="28C2A452-A30E-FF91-CACC-9154F992521C">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:35 UTC</createdTime>
+<generatorID>9058F6AC-1F9B-4325-4052-DD2ABB3BF990</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23BB249E-7EDD-AC00-2A86-3EA25B24B0E6" referredColumn="4D88B32D-2FC9-4961-73AC-E6BEBB5F7BBC"/>
+</associations>
+</Column>
+<Column name="Event_Id" id="AF58E094-239D-9DD6-5F70-6427B4E9B1F1">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:35 UTC</createdTime>
+<generatorID>904F9BE3-F0EA-D2F1-D80E-7D0645A56B7A</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90117F43-342C-7EF9-A654-7476CFA891E6" referredColumn="056483CE-4DB1-EE0C-9AA8-CD39A264C404"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DC34C2F8-95DC-1C2F-F877-A6479E5F29B2" name="Event_in_calendar_PK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:35 UTC</createdTime>
+<generatorID>25F82F60-0B57-CEF8-A643-751013BF73FC</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B05494D-F019-350A-D3F1-69F35F913944"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F59FAF89-B366-5A1C-342B-EC3A9717BA89" name="Event_in_calendar__IDX">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:50:47 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>D739EC57-B106-BCD2-A6CB-DD65E46A86D3</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="28C2A452-A30E-FF91-CACC-9154F992521C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A09D1EF9-BE15-BF0B-34F5-E401525A3799" name="Event_in_calendar__IDXv1">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:50:47 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4836E451-EB75-86EE-8327-5CF4E9DC5740</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="AF58E094-239D-9DD6-5F70-6427B4E9B1F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="403A6051-2EAA-DD45-2789-DD2DE402A7B0" name="Event_in_calendar_Tagged_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:35 UTC</createdTime>
+<generatorID>A88E4F18-C0A9-04B2-7146-55C877F1B681</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B05494D-F019-350A-D3F1-69F35F913944"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="731FB1D0-A750-7F78-3F1D-C4886BC06964" name="Event_in_calendar_Calendar_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:35 UTC</createdTime>
+<generatorID>D739EC57-B106-BCD2-A6CB-DD65E46A86D3</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28C2A452-A30E-FF91-CACC-9154F992521C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="757A304C-05FD-F3E4-1DFF-FC78F7C87BA5" name="Event_in_calendar_Event_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:29:36 UTC</createdTime>
+<generatorID>4836E451-EB75-86EE-8327-5CF4E9DC5740</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF58E094-239D-9DD6-5F70-6427B4E9B1F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

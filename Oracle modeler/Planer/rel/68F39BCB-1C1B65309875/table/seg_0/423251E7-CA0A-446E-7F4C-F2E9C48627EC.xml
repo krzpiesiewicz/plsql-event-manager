@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="423251E7-CA0A-446E-7F4C-F2E9C48627EC" name="Entity_access">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>E327C184-5594-9B57-E416-891EBCCEB21D</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Object_Id" id="E7932EBE-8311-C11F-2E29-39D9F8CEAED1">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>CE52EBD2-66E8-E1BE-1B44-D440FB640484</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB82B952-56D5-1795-8D6A-E73E28730691" referredColumn="0483DB5D-0E91-E825-C28F-76EB1ED79758"/>
+</associations>
+</Column>
+<Column name="User_Id" id="1CFF9AB0-FE45-DE38-B511-899DD94885DB">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 18:31:22 UTC</createdTime>
+<generatorID>EA089248-2BE0-A21F-7C31-0D4E6037B35F</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Access_type_Name" id="B1E7EF6C-8D48-F63D-D919-68DABEE7DB66">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:33:45 UTC</createdTime>
+<generatorID>A8A03FB3-BFC2-211B-3467-6B526DBEE3F0</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Access_type_Name1" id="3567EFFD-4750-6681-5976-F63970A7066B">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:50:47 UTC</createdTime>
+<generatorID>A8A03FB3-BFC2-211B-3467-6B526DBEE3F0</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="503110D6-7A70-F6A9-5291-B5DB1F34F172" referredColumn="72612F5C-3142-F4AF-FE7B-FB0F92B52B9B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A0ED7C3B-036D-89A7-14A7-E6AFF7DF6B0B" name="Entity_access_PK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:33:40 UTC</createdTime>
+<ownerDesignName>Planer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7932EBE-8311-C11F-2E29-39D9F8CEAED1"/>
+<colUsage columnID="1CFF9AB0-FE45-DE38-B511-899DD94885DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45384D21-61D4-C0EC-7A00-FEB1FB4557AB" name="Entity_access_Object_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:50:47 UTC</createdTime>
+<generatorID>F7B7F12D-25DB-E2FF-EC97-86BD1156728A</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7932EBE-8311-C11F-2E29-39D9F8CEAED1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="274F8F44-0CDC-DCFE-1F8B-060609DBCD81" name="Entity_access_User_entity_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:50:47 UTC</createdTime>
+<generatorID>19675D0A-4E38-C151-9163-2646030DB93D</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="9A73D720-8E94-8EDA-FDE9-66C3619D5E0C" name="Entity_access_Access_type_FK">
+<createdBy>krzysiek</createdBy>
+<createdTime>2017-12-02 19:50:47 UTC</createdTime>
+<generatorID>22AAD686-D9C1-58EC-08B1-4058D3535602</generatorID>
+<ownerDesignName>Planer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3567EFFD-4750-6681-5976-F63970A7066B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
